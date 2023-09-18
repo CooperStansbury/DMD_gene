@@ -1,4 +1,4 @@
-function [outputArg1,outputArg2] = hasnain2023(D)
+function [s, GV] = hasnain2023(D)
 %HASNAIN2023 Sensor selection from Learning perturbation-inducible cell states
 % from observability analysis of transcriptome dynamics
 %
@@ -6,7 +6,7 @@ function [outputArg1,outputArg2] = hasnain2023(D)
 %       jpic@umich.edu
 % Date: September 13, 2023
 
-[n,t] = size(D);
+[~,t] = size(D);
 
 %% Dynamic Mode Decomposition
 out = DMD(D, [], 0.9);
