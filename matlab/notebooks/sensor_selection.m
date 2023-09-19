@@ -76,6 +76,10 @@ B = zeros(n,1);
 % Kf = lqr(A',C',Vd,Vn)';
 sysKF = ss(A - L*C, [B L], eye(n,n), 0 * [B L]);
 
+O = obsv(A_bar,C);
+
+figure; plot(Y)
+figure; plot(D(:,1:t)')
 
 
 
@@ -85,9 +89,43 @@ Ts = -1;    % Discrete system
 
 sys = ss(A_bar,zeros(n,1),C,zeros(m,1),Ts,'OutputName','y');    % Construct system
 
-Q = 0;    % process noise // We will need to determine how to estimate these values
-R = 0;      % sensor noise
+Q = 1;    % process noise // We will need to determine how to estimate these values
+R = 1;      % sensor noise
 
 [kalmf,L,~,Mx,Z] = kalman(sys,Q,R); % Construct Kalman Filter
 
-Xhat = lsim(kalmf, Ydata, t=1:9)
+Xhat = lsim(kalmf, Y, 1:9);
+
+F = Xhat(9,:);
+
+norm(Xhat(9,:) - D(:,9))
+norm(Xhat(1,:) - D(:,1))
+
+%% Kalman filtering example
+clear; close all; clc
+
+A = [1.1269   -0.4940    0.1129 
+     1.0000         0         0 
+          0    1.0000         0];
+
+B = [-0.3832
+      0.5919
+      0.5191];
+
+C = [1 0 0];
+
+D = 0;
+
+Plant = ss(A,B,C,D,-1);
+Plant.InputName = 'un';
+Plant.OutputName = 'yt';
+
+
+        a_1A_1&a_1B_1&b_1A_1&b_1B_1&c_1A_1&c_1B_1&d_1A_1&d_1B_1\\
+        a_1A_2&a_1B_2&b_1A_2&b_1B_2&c_1A_2&c_1B_2&d_1A_2&d_1B_2\\
+        a_2A_1&a_2B_1&b_2A_1&b_2B_1&c_2A_1&c_2B_1&d_2A_1&d_2B_1\\
+        a_2A_2&a_2B_2&b_2A_2&b_2B_2&c_2A_2&c_2B_2&d_2A_2&d_2B_2\\
+        a_3A_1&a_3B_1&b_3A_1&b_3B_1&c_3A_1&c_3B_1&d_3A_1&d_3B_1\\
+        a_3A_2&a_3B_2&b_3A_2&b_3B_2&c_3A_2&c_3B_2&d_3A_2&d_3B_2\\
+        a_4A_1&a_4B_1&b_4A_1&b_4B_1&c_4A_1&c_4B_1&d_4A_1&d_4B_1\\
+        a_4A_2&a_4B_2&b_4A_2&b_4B_2&c_4A_2&c_4B_2&d_4A_2&d_4B_2\\
