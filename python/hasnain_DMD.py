@@ -3,6 +3,7 @@ import numpy as np
 from copy import deepcopy
 import os
 import sys
+import scipy
 
 
 def data2dmd(data):
@@ -156,6 +157,72 @@ def embed_data(data, u, rank):
     return data_embedded
 
 
+def get_predictions(dmd_res):
+    """A utility function to get predicted trajectories from a dmd result 
+
+    Params:
+    --------------
+    dmd_res (dict): 
+        Output from the dmd function
+
+    Returns:
+    --------------
+    X_pred (np.array):
+        Reconstructed state predictions from the DMD results
+    cd (float):
+        The coefficient of determination between the predicted array
+        and the actual array as a measure of goodness-of-fit
+    """
+    Atilde = dmd_res['Atilde']
+    u_r = dmd_res['u_r']
+    rank = dmd_res['rank']
+    data_embedded = dmd_res['data_embedded']
+    n = dmd_res['n']
+    m = dmd_res['m']
+    r = dmd_res['r']
+
+    X_pred, cd = n_step_prediction(Atilde, data_embedded, m, r)
+    X_pred = np.dot(u_r, X_pred)
+    X_pred = X_pred.reshape(n, m, r, order='F')
+    return X_pred, cd
+
+
+def sample_correlations(genes, dmd_data, X_pred):
+    """A utility function to estimate the correlation of predicted  
+    trajectories with actual trajectories 
+    
+    Params:
+    --------------
+    genes (pd.Series): 
+        Ordered series of row indices and labels for the dmd_data
+    dmd_data (np.array):
+         An array of shape (genes, timepoints, replicates)
+    X_pred (np.array):
+        Reconstructed state predictions from the DMD results
+
+    Returns:
+    --------------
+    res (pd.DataFrame):
+        The correlations to the sampled genes
+    """
+    res = []
+    for i, row in genes.iterrows():
+        g = row['gene_name']
+        
+        act_mean = np.mean(dmd_data[i], axis=1).ravel()
+        pred_mean = np.mean(X_pred[i], axis=1).ravel()
+        corr, pval = scipy.stats.pearsonr(act_mean, pred_mean)
+    
+        row = {
+            'gene' : g,
+            'corr' : corr,
+            'pval' : pval,
+        }
+        res.append(row)
+    res = pd.DataFrame(res)
+    return res
+
+
 
 def dmd(data, exact=False, rank=None):
     """A function to compute the DMD of the data based on Hasnain et al. 2023
@@ -221,5 +288,8 @@ def dmd(data, exact=False, rank=None):
         'data_embedded' : data_embedded,
         'Phi' : Phi,
         'Phi_hat' : Phi_hat,
-        'amplitudes' : amps
+        'amplitudes' : amps,
+        'n' : n,
+        'm' :  m,
+        'r' : r,
     }
