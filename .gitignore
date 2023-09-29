@@ -1,5 +1,7 @@
 # MATLAB
 *.asv
+data/Human.GRCh38.p13.annot.tsv
+data/hwgGeneIdxTbl.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

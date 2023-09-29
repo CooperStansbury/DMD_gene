@@ -42,6 +42,23 @@ clearvars -except D genes                           % Remove all other variables
 [S, GV] = hasnain2023(D);
 genes.GeneName(S)
 
+%% Test Hasani Sensor Selection
+
+n = 1000; t = 1000;
+A = rand(n,n);
+X = zeros(n,t); A = A ./ sum(A);
+X(:,1) = rand(n,1);
+for i=2:t
+    X(:,i) = A * X(:,i-1);
+end
+[S, GV] = hasnain2023(X);
+
+C = full(getC(S(1:19), n))
+rank(obsv(A,C))
+
+C = full(getC(unique(S(65:100)), n));
+rank(obsv(A,C))
+
 %% Kalman Filtering
 %
 %   In this section I construct Kalman filters to estimate the full state

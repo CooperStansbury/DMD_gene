@@ -8,11 +8,54 @@
 clear
 HWG = load_HWG();
 
-[D,G] = loadMYOD();
-A = shiftedDMD(D,3,[],0.9);
+
+%% DMD of time series data
+
+[D,G] = loadMYOD();             % Load MYOD data set
+% A = shiftedDMD(D,3,[],0.9);
 A = EDMD(D);
-k=1000;
+help dmdsp
+
+%% Align DMD with Hardwired Genome
+
 % Step 1: Get the indices of the k largest entries in A
+k = 100;
+[~, linIdx] = maxk(A(:), k);
+[x,y] = ind2sub(size(A), linIdx);
+I = [x, y];
+
+% Step 2: Map indices to gene names from time series data
+genePairs = cell(size(I,1), 2);
+for i=1:size(genePairs,1)
+    genePairs{i,1} = G(I(i,1));
+    genePairs{i,2} = G(I(i,2));
+end
+
+% Step 3: look up gene pairs in the hardwired genome
+ensg = HWG.geneIndexTable.("Stable ID");
+ensg2idx = containers.Map;
+for i=1:numel(ensg)
+    if ~isempty(ensg{i})
+        ensg2idx(ensg{i}) = i;
+    end
+end
+
+gene2idx = containers.Map(HWG.geneIndexTable.("Gene Name"), 1:height(HWG.geneIndexTable));
+gene2idx = containers.Map;
+for i=1:numel(gn)
+    if ~isempty(gn{i})
+        gene2idx(gn{i}) = i;
+    end
+end
+
+gene2idx.keys
+gn = HWG.geneIndexTable.("Gene Name");
+gene2idx = containers.Map(gn{:}, 1:height(HWG.geneIndexTable));
+
+%% trash code
+tic; disp(maxk(A(:), 10)); toc
+k=1000;
+
 [sortedA, sortedIndices] = sort(A(:), 'descend');
 kLargestIndices = sortedIndices(1:k);
 
