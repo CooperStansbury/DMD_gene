@@ -1,4 +1,4 @@
-function [s, GV] = hasnain2023(D)
+function [s, GV] = hasnain2023(D, replicates)
 %HASNAIN2023 Sensor selection from Learning perturbation-inducible cell states
 % from observability analysis of transcriptome dynamics
 %
@@ -9,7 +9,11 @@ function [s, GV] = hasnain2023(D)
 [~,t] = size(D);
 
 %% Dynamic Mode Decomposition
-out = DMD(D, [], 0.9);
+if nargin == 2
+    out = shiftedDMD(D,replicates,[],0.9);
+else
+    out = DMD(D, [], 0.9);
+end
 Atilda = out.DMD.UX' * out.Xp * out.DMD.VX * inv(out.DMD.Sig);
 
 %{
