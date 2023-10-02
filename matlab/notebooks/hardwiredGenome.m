@@ -277,3 +277,29 @@ colIndicesInHWGA = cellfun(@(i) G{i}(2), num2cell(kLargestIndices));
 
 
 % [D,G] = loadHasnain2023();
+
+%% Sparse Structure is Known
+clear; close all; clc;
+
+ds = 1;
+thresh=0.999; % DMD threshold
+
+load('C:\Users\picka\Documents\my_projects\DBTM\HardwiredGenome\Data\Processed\HWG\000\HWG.mat');
+HG = HWG.geneIndexTable;                   % populate HWG table with more gene names                    
+name2idx = containers.Map;                % build map so that HWG table may be populated faster
+for i=1:height(HG)
+    n = string(HG.("Gene Name"){i});
+    if ~isempty(n)
+        name2idx(n) = i;
+    end
+end
+Ah = HWG.A;
+
+if ds==1
+    [D,G,replicates] = load2015(true); % Load data set
+elseif ds == 2
+    [D,G,replicates] = loadMYOD(); % Load data set
+end
+
+
+

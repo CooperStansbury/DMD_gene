@@ -1,4 +1,4 @@
-function [D,genes,reps] = load2015()
+function [D,genes,reps] = load2015(foldNormalize)
 %LOADMYOD Loads 2015 data
 %
 % Auth: Joshua Pickard
@@ -17,7 +17,16 @@ for t=1:9                                          % Read each timepoint
     D2(:,t) = D(:,2*(t-1) + 1);
 end
 
+if foldNormalize
+    for i=1:size(D1,2)
+        D1(:,i) = D1(:,i) ./ D1(:,1);
+        D2(:,i) = D2(:,i) ./ D2(:,1);
+    end
+end
+
 D = [D1 D2];                                     % Organize the data
+
+D(isnan(D)) = 0;
 
 end
 

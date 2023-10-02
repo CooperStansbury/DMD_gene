@@ -14,7 +14,7 @@
 clear; close all; clc;
 cellCycleGenes = readtable('data/kegg_hsa04110.csv');   % Load cell cycle genes
 % [D,G,replicates] = loadMYOD(); % Load data set
-[D,G,replicates] = load2015(); % Load data set
+[D,G,replicates] = load2015(true); % Load data set
 gene2idx = containers.Map;                              % Map gene names to indices
 for i=1:numel(G); gene2idx(string(G{i})) = i; end
 cellCycleIdxs = [];                                     % Identify cell cycle indices from the data
@@ -323,13 +323,13 @@ cellCycleGenes = readtable('data/kegg_hsa04110.csv');   % Load cell cycle genes
 
 fig = figure;
 set(fig, 'Units', 'inches', 'Position', [1, 1, 13, 6]); % Adjust the figure size
-tiledlayout(2, 2);
+tiledlayout(1, 2);
 for ds=1:2
     % Load particular data
     if ds==1
         [D,G,replicates] = loadMYOD(); % Load data set
     elseif ds == 2
-        [D,G,replicates] = load2015(); % Load data set
+        [D,G,replicates] = load2015(true); % Load data set
     end
 
     gene2idx = containers.Map;                              % Map gene names to indices
@@ -413,13 +413,18 @@ for ds=1:2
     colormap('jet');
     colorbar;
     % set(gca, 'XTick', [], 'YTick', 1:34, 'YTickLabel', GR);
-    set(gca, 'XTick', 1:34, 'XTickLabel', GR, 'YTick', 1:34, 'YTickLabel', GR);
-    xtickangle(60); % Rotate X-axis labels for readability
-    title('Linearized Dynamics (DMD)', 'Interpreter', 'latex', 'FontSize', 14); % Use LaTeX for title
+    set(gca, 'XTick', 1:34, 'XTickLabel', GR, 'YTick', []); %1:34, 'YTickLabel', GR);
+    xtickangle(90); % Rotate X-axis labels for readability
+    title('Linearized Dynamics (DMD)', 'Interpreter', 'latex', 'FontSize', 20); % Use LaTeX for title
     
     % Construct GRN from DMD A
+    %{
     nexttile;
-    threshW = 2;
+    if ds == 1
+        threshW = 2;
+    else
+        threshW = 1500;
+    end
     Ag = (A > threshW) + (A < -1 * threshW); Ag = Ag + Ag';
     g = graph(Ag);
     
@@ -452,10 +457,70 @@ for ds=1:2
             % P.NodeLabel{i} = label;
         end
     end
-    title('Observable Cell Cycle Network', 'Interpreter', 'latex', 'FontSize', 14); % Use LaTeX for title
+    title('Observable Cell Cycle Network', 'Interpreter', 'latex', 'FontSize', 20); % Use LaTeX for title
+    %}
 end
-sgtitle('PIP-FUCCI Observability', 'Interpreter', 'latex', 'FontSize', 16); % Use LaTeX for super title
+sgtitle('PIP-FUCCI Observability', 'Interpreter', 'latex', 'FontSize', 32); % Use LaTeX for super title
 % clearvars -except GC DC replicates
 
+%% PIP-FUCCI SINDy
+% clear; 
+close all; clc; clearvars -except reducedSystem
+
+ds = 1;       % 1: 2015, 2: 2018
+thresh=0.999; % DMD threshold
+
+load('C:\Users\picka\Documents\my_projects\DBTM\HardwiredGenome\Data\Processed\HWG\000\HWG.mat');
+HG = HWG.geneIndexTable;                   % populate HWG table with more gene names                    
+name2idx = containers.Map;                % build map so that HWG table may be populated faster
+for i=1:height(HG)
+    n = string(HG.("Gene Name"){i});
+    if ~isempty(n)
+        name2idx(n) = i;
+    end
+end
+
+cellCycleGenes = readtable('data/kegg_hsa04110.csv');   % Load cell cycle genes
+
+% Load particular data
+if ds==1
+    [D,G,replicates] = load2015(true); % Load data set
+elseif ds == 2
+    [D,G,replicates] = loadMYOD(); % Load data set
+end
+
+gene2idx = containers.Map;                              % Map gene names to indices
+for i=1:numel(G); gene2idx(string(G{i})) = i; end
+cellCycleIdxs = [];                                     % Identify cell cycle indices from the data
+for i=1:height(cellCycleGenes)
+    if gene2idx.isKey(string(cellCycleGenes.GeneName{i}))
+        cellCycleIdxs(end+1) = gene2idx(string(cellCycleGenes.GeneName{i}));
+    end
+end
+
+GC = G(cellCycleIdxs);      % Extract cell cycle gene indices
+DC = D(cellCycleIdxs,:);    % Extract cell cycle RNAseq
+
+GR = GC(reducedSystem);     % Fully observable system
+DR = DC(reducedSystem,:);   % Fully observable system
 
 
+F = firstDifferences(DR,replicates);
+order = 3;
+lib = makePolyLib(size(DR,1),order);
+theta = makeTheta(DR(:,1:8),lib);
+
+size(theta)
+size(F{1})
+
+C = lsqr(theta,F{1});
+
+FF = F{1};
+
+
+C = theta' \ FF';
+
+C = theta \ F{1};
+C = FF \ theta;
+
+lib{1}
