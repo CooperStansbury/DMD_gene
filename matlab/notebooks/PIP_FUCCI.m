@@ -13,8 +13,8 @@
 %% Load data
 clear; close all; clc;
 cellCycleGenes = readtable('data/kegg_hsa04110.csv');   % Load cell cycle genes
-% [D,G,replicates] = loadMYOD(); % Load data set
-[D,G,replicates] = load2015(true); % Load data set
+[D,G,replicates] = loadMYOD(); % Load data set
+% [D,G,replicates] = load2015(true); % Load data set
 gene2idx = containers.Map;                              % Map gene names to indices
 for i=1:numel(G); gene2idx(string(G{i})) = i; end
 cellCycleIdxs = [];                                     % Identify cell cycle indices from the data
@@ -101,7 +101,7 @@ for numSensors=1:numel(s)
     r = rank(O);
     disp("# Sensors: " + string(length(unique(s(1:numSensors)))) + ", rank: " + string(r));
 end
-% GC(s(1:5))
+GC(s(1:10))
 
 %% What is the largest set of genes that can be observed from PIP-FUCCI
 %

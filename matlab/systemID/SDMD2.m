@@ -5,10 +5,10 @@ function [A] = SDMD2(DataMatrix, reps, S)
 %
 % Auth: Joshua Pickard
 %       jpic@umich.edu
-% Date: September 14, 2023
+% Date: October 3, 2023
 
 %% Construct data matrices note, time snapshots are columns
-t = size(DataMatrix,2) / replicates;
+t = size(DataMatrix,2) / reps;
 n = size(DataMatrix,1);
 Xp = [];
 Xf = [];
