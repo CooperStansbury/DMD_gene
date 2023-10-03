@@ -101,7 +101,12 @@ for numSensors=1:numel(s)
     r = rank(O);
     disp("# Sensors: " + string(length(unique(s(1:numSensors)))) + ", rank: " + string(r));
 end
-GC(s(1:10))
+GC(s(1:10));
+
+T = cell2table(GC(s));
+writetable(T, 'MYOD_2023_sensor_selection.csv');
+% csvwrite('MYOD_2023_sensor_selection.csv', GC(s));
+% GC(s)
 
 %% What is the largest set of genes that can be observed from PIP-FUCCI
 %
