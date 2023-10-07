@@ -515,17 +515,117 @@ order = 3;
 lib = makePolyLib(size(DR,1),order);
 theta = makeTheta(DR(:,1:8),lib);
 
-size(theta)
-size(F{1})
+% this section is incomplete
 
-C = lsqr(theta,F{1});
+%% PIP-FUCCI Kalman Filter
 
-FF = F{1};
+% Build state space model (A,C)
+clear; close all; clc;
+ds = 1;
+thresh = 0.95; % DMD threshold
+threshW = 200; % graph threshold
+sensors = ["GEM", "PCNA", "CDT1"];
 
+[DC,GC,replicates] = loadTimeSeriesCC(ds);
 
-C = theta' \ FF';
+sensorIdxs = [];
+for s=1:length(sensors)
+    for i=1:length(GC)
+        if strcmp(sensors(s), string(GC{i}))
+            sensorIdxs(end+1) = i;
+            break;
+        end
+    end
+end
 
-C = theta \ F{1};
-C = FF \ theta;
+% perform DMD to construct A matrix
+dmd = shiftedDMD(DC,replicates,[],thresh);
+A = dmd.Xp*dmd.DMD.VX*pinv(dmd.DMD.Sig)*dmd.DMD.UX';
 
-lib{1}
+% figure; plot(sort(abs(A(:))));
+
+Ag = (A > threshW) + (A < -1 * threshW); Ag = Ag + Ag';
+g = graph(Ag);
+
+% Rank all genes according to their distances from CDT1, PCNA, and GEM
+d = distances(g);
+dists = zeros(size(DC,1), 3);
+for s=1:3
+    for i=1:size(DC,1)
+        dists(i,s) = d(i,sensorIdxs(s));
+    end
+end
+totalDist = sum(dists,2);
+[~, idx] = sort(totalDist,'ascend');
+
+% while the system is fully observable, add new genes until it is not fully
+% observable
+reducedSystem = sensorIdxs;
+reducedSensors = [1 2 3];
+r = length(reducedSystem);
+i = 1;
+while true
+    DR = DC(reducedSystem,:);
+    dmd = shiftedDMD(DR,3,[],0.9);
+    Ar = dmd.Xp*dmd.DMD.VX*pinv(dmd.DMD.Sig)*dmd.DMD.UX';
+    Cr = getC(reducedSensors, size(Ar,1));
+    Or = obsv(Ar,Cr);
+    r = rank(Or);
+    if length(reducedSystem) == r
+        % add a new vertex
+        while find(reducedSystem == idx(i))
+            i = i + 1;
+        end
+        reducedSystem = [reducedSystem idx(i)];
+    else
+        reducedSystem(end) = [];
+        break
+    end
+end
+C = getC([1 2 3], size(Ar,1)); C = full(C);
+A = Ar;
+
+% Get observations from PIP-FUCCI imaging (Y)
+T = readtable('data/C1.tracks.full.csv'); % Read in cell tracks
+TT = [T.ID T.c0_intensity_mean T.c1_intensity_mean T.c2_intensity_mean];
+id = mode(TT(:,1));
+TT(TT(:,1) ~= id,:) = [];
+
+Y = TT(:,2:4);
+
+clearvars -except A C Y DR
+% clearvars --except A, C, Y
+
+%% Kalman Filter on (A,C) with inputs Y
+n = size(A,1);
+Y = Y';
+
+% Number of time steps
+T = size(Y, 2);
+
+% Initialize Kalman filter parameters
+x_hat_0 = rand(n,1); % Replace with your initial estimate
+P_0     = zeros(n,n);   % Replace with your initial covariance matrix
+Q       = cov(DR');   % Replace with your process noise covariance
+R       = cov(Y');    % Replace with your measurement noise covariance
+
+% Initialize variables
+x_hat = x_hat_0;
+P = P_0;
+
+% Kalman filter loop
+for t = 1:T
+    % Prediction step
+    x_hat_minus = A * x_hat;            % Predicted state estimate
+    P_minus = A * P * A' + Q;           % Predicted error covariance
+    
+    % Update step (using the measurement Y(:, t))
+    K = P_minus * C' / (C * P_minus * C' + R); % Kalman gain
+    x_hat = x_hat_minus + K * (Y(:, t) - C * x_hat_minus); % Updated state estimate
+    P = (eye(size(A)) - K * C) * P_minus; % Updated error covariance
+end
+
+% The estimated state x_hat at time 0 is in x_hat.
+
+%% Functions
+
