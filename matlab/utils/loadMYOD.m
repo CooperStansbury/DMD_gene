@@ -1,4 +1,4 @@
-function [D,genes] = loadMYOD()
+function [D,genes,reps] = loadMYOD()
 %LOADMYOD Loads 2018 MYOD data
 %
 % Auth: Joshua Pickard
@@ -20,6 +20,6 @@ end
 
 D1 = D1'; D2 = D2'; D3 = D3';
 D = [D1 D2 D3];                                     % Organize the data
-
+reps = 3;
 end
 

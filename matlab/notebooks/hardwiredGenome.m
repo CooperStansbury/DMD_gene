@@ -56,13 +56,29 @@ A_IndexTable = indexTable(interacting_genes, :);
 % Construct the factor matrices and package as the Hardwired Genome
 [B_HWG, C_HWG, C_IndexTable] = HWGMatrixDecomp(A_HWG, A_IndexTable);
 
+% Load Hardwired Genome with full gene names
+T = readtable('data/ensg2geneName.csv');   % load ensg to gene name map
+ensg2name = containers.Map;                % build map so that HWG table may be populated faster
+for i=1:height(T)
+    e = string(T{i,1}{1});
+    n = string(T{i,2}{1});
+    ensg2name(e) = n;
+end
+HG = HWG.geneIndexTable;                   % populate HWG table with more gene names                    
+for i=1:height(HG)
+    if ensg2name.isKey(HG.("Stable ID")(i))
+        n = ensg2name(HG.("Stable ID")(i));
+        HG.("Gene Name")(i) = {n};
+    end
+end
+
 % Construct and save HWG object
 HWG = struct;
 HWG.thresh = thresh;
 HWG.A = A_HWG;
 HWG.B = B_HWG;
 HWG.C = C_HWG;
-HWG.geneIndexTable = A_IndexTable;
+HWG.geneIndexTable = HG;
 HWG.TFIndexTable = C_IndexTable;
 
 % open the correct directory to save this to
@@ -261,3 +277,29 @@ colIndicesInHWGA = cellfun(@(i) G{i}(2), num2cell(kLargestIndices));
 
 
 % [D,G] = loadHasnain2023();
+
+%% Sparse Structure is Known
+clear; close all; clc;
+
+ds = 1;
+thresh=0.999; % DMD threshold
+
+load('C:\Users\picka\Documents\my_projects\DBTM\HardwiredGenome\Data\Processed\HWG\000\HWG.mat');
+HG = HWG.geneIndexTable;                   % populate HWG table with more gene names                    
+name2idx = containers.Map;                % build map so that HWG table may be populated faster
+for i=1:height(HG)
+    n = string(HG.("Gene Name"){i});
+    if ~isempty(n)
+        name2idx(n) = i;
+    end
+end
+Ah = HWG.A;
+
+if ds==1
+    [D,G,replicates] = load2015(true); % Load data set
+elseif ds == 2
+    [D,G,replicates] = loadMYOD(); % Load data set
+end
+
+
+
