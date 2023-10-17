@@ -53,17 +53,23 @@
 %% Predicting Velocity
 clear; close all; clc;
 
+ds = 2;
+% normalizerGene = "GEM"; % "PNCA" or "CDT1"
+sensors = ["PCNA","CDT1","GEM"];
+% targetGenes = ["ROCK1", "ROCK2"];
+% Ovservable genes from CDT1, PCNA, and GEM according to PIP-FUCCI.m
+targetGenes = ["PPP2R5B","CCND1","CCND2","CCND3","CDK4","CDK6","RB1","RBL1","RBL2","ABL1","HDAC1","HDAC2","E2F1","E2F2","E2F3","E2F4","E2F5","TFDP1","TFDP2","GSK3B","TGFB1","TGFB3","SMAD2","SMAD3","SMAD4"];
+
 % load system model
-ds = 1;
-[A,C,G,Q] = systemModel(ds, sensors, genes); % 4th argument is ignored because Q covariance is calculated below from the cell tracks, not from
+[A,C,G,Q] = systemModel(ds, sensors, targetGenes); % 4th argument is ignored because Q covariance is calculated below from the cell tracks, not from
 
 % Load PF signals
 minSamples = 10;
 cellTracks = readtable('data/C1.tracks.full.csv'); % Read in cell tracks
-cellTracks = filterCellTracks(cellTracks,minSamples);
+cellTracks = filterCellTracks(cellTracks,minSamples, true);
 velocity = getVelocity(cellTracks);
 signals = getPIPFUCCI(cellTracks);
-% Q = signalCovariance(cellTracks);
+Q = signalCovariance(signals);
 
 % Partition data for testing
 kfold = 5;
@@ -125,6 +131,30 @@ testing(cv,1)
 
 %% Figures
 
+%% Visualize the convergence of the Kalman Filter
+
+
+%% Eigenvalues of A
+
+E = eig(A);
+r = real(E);
+i = imag(E);
+
+% Define the angle values
+theta = linspace(0, 2*pi, 1000);  % Create 1000 equally spaced points around the unit circle
+
+% Compute the x and y coordinates of the unit circle
+x = cos(theta);
+y = sin(theta);
+
+% Plot the unit circle
+figure; plot(x, y); hold on;
+scatter(r,i);
+xlabel('Real ($\lambda$)','Interpreter', 'latex');
+ylabel('Imaginary ($\lambda$)','Interpreter', 'latex');
+title('DMD Eigenvalues','Interpreter', 'latex');
+
+%%
 % Luminiscinece and gene activity distribution
 clear; close all; clc;
 

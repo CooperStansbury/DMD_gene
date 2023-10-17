@@ -13,8 +13,8 @@
 %% Load data
 clear; close all; clc;
 cellCycleGenes = readtable('data/kegg_hsa04110.csv');   % Load cell cycle genes
-[D,G,replicates] = loadMYOD(); % Load data set
-% [D,G,replicates] = load2015(true); % Load data set
+% [D,G,replicates] = loadMYOD(); % Load data set
+[D,G,replicates] = load2015(true); % Load data set
 gene2idx = containers.Map;                              % Map gene names to indices
 for i=1:numel(G); gene2idx(string(G{i})) = i; end
 cellCycleIdxs = [];                                     % Identify cell cycle indices from the data
@@ -175,6 +175,9 @@ while true
 end
 disp(reducedSystem)
 disp(GC(reducedSystem))
+for i=1:length(reducedSystem)
+    disp("'" + GC{reducedSystem(i)} + "',");
+end
 
 %% Which genes in GR are transcription factors
 load('C:\Users\picka\Documents\my_projects\DBTM\HardwiredGenome\Data\Processed\HWG\000\HWG.mat');

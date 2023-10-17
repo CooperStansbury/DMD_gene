@@ -8,7 +8,9 @@ function [R] = signalCovariance(signalsTrain)
 % Remove the first time point from the data
 signals = [];
 for i=1:numel(signalsTrain)
-    S = signalsTrain{i}; S(isnan(S)) = 0;
+    S = signalsTrain{i};
+    S(isnan(S)) = 0;
+    S(isinf(S)) = 0;
     signals = [signals; S(2:end,:)];
 end
 
