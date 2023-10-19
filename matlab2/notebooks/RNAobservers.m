@@ -10,7 +10,7 @@
 clear; close all; clc;
 isPlot = 1;
 
-ds = 2;
+ds = 1;
 sensorGenes = ["PCNA","CDT1","GEM"];
 % nSensors = 10;
 % targetGenes = [];
@@ -184,7 +184,7 @@ sensorGenes = ["PCNA","CDT1","GEM"]; nSensors = numel(sensorGenes);
 targetGenes = ["PPP2R5B","CCND1","CCND2","CCND3","CDK4","CDK6","RB1","RBL1","RBL2","ABL1","HDAC1","HDAC2","E2F1","E2F2","E2F3","E2F4","E2F5"];%,"TFDP1","TFDP2","GSK3B","TGFB1","TGFB3","SMAD2","SMAD3","SMAD4"];
 
 if ds == 1
-    [D,G,reps] = load2015(false); % Load data set
+    [D,G,reps] = load2015(true); % Load data set
 elseif ds == 2
     [D,G,reps] = loadMYOD(); % Load data set
 end
@@ -207,18 +207,34 @@ end
 Dwhole = D;
 D = D(geneIdxs,:);
 G = G(geneIdxs);
-%%
-for t=1:T
-    for r=1:3
-        Dr = D;
-        Dr(:,(r-1)*T+1:r*T) = [];
-        [Af,Ab] = fbDMD(Dr,reps-1,t,1);
-        O = fbobsvt(Af,Ab,C,t);
+C = getC(1:3, length(geneIdxs)); C = full(C);
+
+offset = 2;
+E = zeros(T,reps);
+for t=offset:T-offset
+    tf = T - t + 1;
+    tb = t;
+    for r=1:reps
+        Dtrain = D;
+        Dtrain(:,(r-1)*T+1:r*T) = [];
+        Dtest = D(:,(r-1)*T+1:r*T);
+        [Ab,Af] = fbDMD(Dtrain,reps-1,t,1);
+        O = fbobsvt(Ab,Af,C, tb, tf);
+        Y = C * Dtest; Y = reshape(Y, [numel(Y), 1]);
+        xthat = O \ Y;
+        xttrue = D(:,t);
+        E(t,r) = norm(xthat - xttrue);
     end
 end
 
-
-
+figure;
+tspan = 8*(0:T-1);
+m = mean(E,2);
+err = std(E') / sqrt(reps);
+errorbar(tspan,m,err);
+title('Forward-Backward Estimation (2018)','Interpreter', 'latex');
+xlabel("Time (hours)",'Interpreter', 'latex')
+ylabel("Estimate Error",'Interpreter', 'latex');
 
 
 
@@ -252,3 +268,14 @@ figure; plot(E);
 [kalmf,L,P] = kalman(sym,0,0)
 kalman(sym)
 % Q = cov(D'); R = cov(D(1:length(sensorGenes),:)');
+
+%%
+
+tic
+i = 0;
+while i < 1000000
+    r = mean(rand(4,1));
+    i = i + 1;
+end
+disp(i);
+disp(toc)

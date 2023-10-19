@@ -17,7 +17,7 @@ elseif nargin == 2
 end
 
 outputs = cell(length(ids),1);
-if strcmp(type,'mean')
+if strcmp(type,"mean")
     systemOutput = [cellTracks.c0_intensity_mean cellTracks.c1_intensity_mean cellTracks.c2_intensity_mean];
 else
     systemOutput = [cellTracks.c0_logFoldChange_processed cellTracks.c1_logFoldChange_processed cellTracks.c2_logFoldChange_processed];
@@ -27,7 +27,7 @@ for i=1:length(ids)
     id = ids(i);
     idIdxs = find(cellTracks.ID == id);
     Y = systemOutput(idIdxs,:);
-    outputs{i} = normalizeSignals(Y, gene);
+    outputs{i} = Y; % normalizeSignals(Y, gene);
 end
 
 end

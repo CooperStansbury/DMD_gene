@@ -1,4 +1,4 @@
-function [Af, Ab] = fbDMD(D,reps,t,thresh)
+function [Ab, Af] = fbDMD(D,reps,t,thresh)
 %FBDMD Forward-Backward Dynamic Mode Decomposition
 %
 % Auth: Joshua Pickard
