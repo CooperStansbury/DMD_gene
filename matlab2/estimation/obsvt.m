@@ -5,7 +5,7 @@ function [O] = obsvt(A, C, T)
 %       jpic@umich.edu
 % Date: October 18, 2023
 
-O = zeros(t*size(C,1), size(A,2));
+O = zeros(T*size(C,1), size(A,2));
 Ai = eye(size(A));
 for t=1:T
     O((t-1)*size(C,1)+1:t*size(C,1),:) = C*Ai;

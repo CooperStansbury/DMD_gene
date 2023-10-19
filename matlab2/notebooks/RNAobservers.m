@@ -138,6 +138,7 @@ if ds == 1
 elseif ds == 2
     [D,G,reps] = loadMYOD(); % Load data set
 end
+T = size(D,2) / reps;
 
 % subset the data to only include sensor and target genes
 gene2idx = containers.Map;                              % Map gene names to indices
@@ -163,10 +164,63 @@ A = out.DMD.A_bar;
 C = getC(1:3, length(geneIdxs)); C = full(C);
 
 % Set up least squares problem
-O = obsvt(A,C,)
-O = obsv(A,C);
-Y = D(1:nSensors,:);
-y = reshape(Y,[numel(Y) 1]);
+for r=1:reps
+    O = obsvt(A,C,T);
+    Y = D(1:nSensors,(r-1)*T+1:r*T);
+    y = reshape(Y,[numel(Y) 1]);
+    x0hat = O\y;
+    x0true = D(:,(r-1)*T+1);
+    disp(norm(x0hat-x0true));
+end
+
+%% xt estimate from observability matrix
+%   this section performs the above experiment except it approximates any
+%   xt where t != 0
+clear; close all; clc;
+
+ds = 2;
+% Ovservable genes from CDT1, PCNA, and GEM according to PIP-FUCCI.m
+sensorGenes = ["PCNA","CDT1","GEM"]; nSensors = numel(sensorGenes);
+targetGenes = ["PPP2R5B","CCND1","CCND2","CCND3","CDK4","CDK6","RB1","RBL1","RBL2","ABL1","HDAC1","HDAC2","E2F1","E2F2","E2F3","E2F4","E2F5"];%,"TFDP1","TFDP2","GSK3B","TGFB1","TGFB3","SMAD2","SMAD3","SMAD4"];
+
+if ds == 1
+    [D,G,reps] = load2015(false); % Load data set
+elseif ds == 2
+    [D,G,reps] = loadMYOD(); % Load data set
+end
+T = size(D,2) / reps;
+
+% subset the data to only include sensor and target genes
+gene2idx = containers.Map;                              % Map gene names to indices
+for i=1:numel(G); gene2idx(string(G{i})) = i; end
+geneIdxs = [];                                     % Identify cell cycle indices from the data
+for i=1:length(sensorGenes)
+    if gene2idx.isKey(string(sensorGenes(i)))
+        geneIdxs(end+1) = gene2idx(string(sensorGenes(i)));
+    end
+end
+for i=1:length(targetGenes)
+    if gene2idx.isKey(string(targetGenes(i)))
+        geneIdxs(end+1) = gene2idx(string(targetGenes(i)));
+    end
+end
+Dwhole = D;
+D = D(geneIdxs,:);
+G = G(geneIdxs);
+%%
+for t=1:T
+    for r=1:3
+        Dr = D;
+        Dr(:,(r-1)*T+1:r*T) = [];
+        [Af,Ab] = fbDMD(Dr,reps-1,t,1);
+        O = fbobsvt(Af,Ab,C,t);
+    end
+end
+
+
+
+
+
 
 %% state space model
 
