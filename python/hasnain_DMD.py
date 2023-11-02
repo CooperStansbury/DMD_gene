@@ -330,7 +330,6 @@ def gram_matrix(A, x0, nT=50, reduced=True, projection_matrix=np.array([])):
 
     G = np.zeros_like(A)
     for ii in range(nT):
-        print(f"{ii}...")
         A_pow = np.linalg.matrix_power(A,ii)
         G += np.matmul( np.matmul(A_pow, x0uni), np.matmul(x0uni.T, A_pow.T) ) 
     # right eigenvectors of G (columns of V) are rows of the gene sampling matrix (or vector if just one eigvec kept)
