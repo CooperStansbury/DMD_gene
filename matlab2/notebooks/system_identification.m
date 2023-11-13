@@ -98,7 +98,7 @@ tic;
 As = SDMD(X,(Atrue ~= 0));
 ts = toc; disp('Sparse');
 tic;
-Ae = exactDMD(X);
+Ae = EDMD(X);
 te = toc; disp('Exact');
 
 nd = norm(Atrue - out.DMD.A_bar);

@@ -1,4 +1,4 @@
-function [outputs] = getPIPFUCCI(cellTracks, ids, type, gene)
+function [outputs] = getPIPFUCCI(cellTracks, ids, type)
 %GETPIPFUCCI Returns PIP-FUCCI signals from the cellt tracks table
 %
 % Auth: Joshua Pickard

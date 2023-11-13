@@ -179,7 +179,7 @@ legend('True - measured','True - filtered')
 
 
 %%
-
+%{
 Plant = ss(A,B,C,D,-1);
 Plant.InputName = 'un';
 Plant.OutputName = 'yt';
@@ -193,3 +193,4 @@ Plant.OutputName = 'yt';
         a_3A_2&a_3B_2&b_3A_2&b_3B_2&c_3A_2&c_3B_2&d_3A_2&d_3B_2\\
         a_4A_1&a_4B_1&b_4A_1&b_4B_1&c_4A_1&c_4B_1&d_4A_1&d_4B_1\\
         a_4A_2&a_4B_2&b_4A_2&b_4B_2&c_4A_2&c_4B_2&d_4A_2&d_4B_2\\
+%}
