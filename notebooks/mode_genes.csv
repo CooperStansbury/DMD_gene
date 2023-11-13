@@ -1,0 +1,1060 @@
+,path_name,adj_p_val,overlapping_genes,mode
+0,SRP-dependent cotranslational protein targeting to membrane (GO:0006614),4.056177465354193e-06,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",1
+1,cytoplasmic translation (GO:0002181),4.056177465354193e-06,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",1
+2,cotranslational protein targeting to membrane (GO:0006613),4.056177465354193e-06,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",1
+3,protein targeting to ER (GO:0045047),4.824395942323014e-06,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",1
+4,"nuclear-transcribed mRNA catabolic process, nonsense-mediated decay (GO:0000184)",6.149757368207969e-06,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",1
+5,antigen processing and presentation of endogenous peptide antigen (GO:0002483),2.075835383429735e-05,"['HLA-DRA', 'B2M', 'HLA-E']",1
+6,peptide biosynthetic process (GO:0043043),2.651346263499792e-05,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",1
+7,nuclear-transcribed mRNA catabolic process (GO:0000956),3.032944450555642e-05,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",1
+8,translation (GO:0006412),8.15190984158129e-05,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",1
+9,positive regulation of T cell mediated immunity (GO:0002711),0.00024091506002521792,"['HLA-DRA', 'B2M', 'HLA-E']",1
+10,cellular macromolecule biosynthetic process (GO:0034645),0.0004324206914632178,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",1
+11,gene expression (GO:0010467),0.0007258886374571986,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",1
+12,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-independent (GO:0002480)",0.0008216333077943834,"['B2M', 'HLA-E']",1
+13,interferon-gamma-mediated signaling pathway (GO:0060333),0.0011430504026425684,"['HLA-DRA', 'B2M', 'HLA-E']",1
+14,sequestering of actin monomers (GO:0042989),0.0011430504026425684,"['TMSB4X', 'TMSB10']",1
+15,cellular protein metabolic process (GO:0044267),0.0011599573224752842,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",1
+16,antigen processing and presentation of exogenous peptide antigen (GO:0002478),0.0033634340588045153,"['CD74', 'HLA-DRA', 'HLA-E']",1
+17,positive regulation of alpha-beta T cell activation (GO:0046635),0.0039978374414207036,"['HLA-DRA', 'HLA-E']",1
+18,cellular response to interferon-gamma (GO:0071346),0.004844517655625386,"['HLA-DRA', 'B2M', 'HLA-E']",1
+19,negative regulation of actin filament polymerization (GO:0030837),0.0055749844187833525,"['TMSB4X', 'TMSB10']",1
+20,negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage (GO:1902230),0.0055749844187833525,"['CD74', 'TPT1']",1
+21,positive regulation of T cell mediated cytotoxicity (GO:0001916),0.0055749844187833525,"['HLA-DRA', 'HLA-E']",1
+22,regulation of T cell mediated cytotoxicity (GO:0001914),0.006649677580675513,"['HLA-DRA', 'HLA-E']",1
+23,negative regulation of response to DNA damage stimulus (GO:2001021),0.007289935890371812,"['CD74', 'TPT1']",1
+24,antigen processing and presentation of peptide antigen via MHC class I (GO:0002474),0.007631715723842814,"['B2M', 'HLA-E']",1
+25,positive regulation of cytokine production involved in immune response (GO:0002720),0.007631715723842814,"['B2M', 'HLA-E']",1
+26,rRNA metabolic process (GO:0016072),0.008021192330621423,"['RPL11', 'RPS6', 'RPL19']",1
+27,retina homeostasis (GO:0001895),0.00844041045557364,"['B2M', 'ACTG1']",1
+28,regulation of cell migration (GO:0030334),0.008740707987258393,"['CD74', 'TMSB4X', 'TMSB10', 'ACTG1']",1
+29,rRNA processing (GO:0006364),0.008740707987258393,"['RPL11', 'RPS6', 'RPL19']",1
+30,regulation of immune response (GO:0050776),0.009339446819772883,"['HLA-DRA', 'B2M', 'HLA-E']",1
+31,positive regulation of leukocyte mediated cytotoxicity (GO:0001912),0.01054138462446233,"['HLA-DRA', 'HLA-E']",1
+32,ribosome biogenesis (GO:0042254),0.01075010788304791,"['RPL11', 'RPS6', 'RPL19']",1
+33,ncRNA processing (GO:0034470),0.011910992822433969,"['RPL11', 'RPS6', 'RPL19']",1
+34,positive regulation of protein binding (GO:0032092),0.017484903908341457,"['RPL11', 'B2M']",1
+35,ribonucleoprotein complex biogenesis (GO:0022613),0.018180638908410807,"['RPL11', 'RPS6']",1
+36,protein tetramerization (GO:0051262),0.02467193914976852,"['B2M', 'MS4A1']",1
+37,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-dependent (GO:0002479)",0.025374677831777933,"['B2M', 'HLA-E']",1
+38,positive regulation of immune response (GO:0050778),0.02542388766475268,"['CD74', 'HLA-DRA']",1
+39,positive regulation of lymphocyte proliferation (GO:0050671),0.02542388766475268,"['CD74', 'HLA-E']",1
+40,antigen processing and presentation of exogenous peptide antigen via MHC class I (GO:0042590),0.02679358313489366,"['B2M', 'HLA-E']",1
+41,regulation of interleukin-8 production (GO:0032677),0.028118156496156854,"['CD74', 'TMSB4X']",1
+42,cytokine-mediated signaling pathway (GO:0019221),0.028118156496156854,"['TMSB4X', 'HLA-DRA', 'B2M', 'HLA-E']",1
+43,innate immune response (GO:0045087),0.029420092283025306,"['CD74', 'B2M', 'HLA-E']",1
+44,positive regulation of binding (GO:0051099),0.03232448248186749,"['RPL11', 'B2M']",1
+45,antigen processing and presentation of exogenous peptide antigen via MHC class II (GO:0019886),0.03724347408275035,"['CD74', 'HLA-DRA']",1
+46,antigen processing and presentation of peptide antigen via MHC class II (GO:0002495),0.03724347408275035,"['CD74', 'HLA-DRA']",1
+47,"positive regulation of CD4-positive, CD25-positive, alpha-beta regulatory T cell differentiation (GO:0032831)",0.03724347408275035,['HLA-DRA'],1
+48,negative regulation of RNA polymerase II regulatory region sequence-specific DNA binding (GO:1903026),0.03724347408275035,['TMSB4X'],1
+49,positive regulation of natural killer cell proliferation (GO:0032819),0.03724347408275035,['HLA-E'],1
+50,cellular response to nicotine (GO:0071316),0.03724347408275035,['B2M'],1
+51,positive regulation of prostaglandin biosynthetic process (GO:0031394),0.03724347408275035,['CD74'],1
+52,tight junction organization (GO:0120193),0.03724347408275035,['ACTG1'],1
+53,regulation of natural killer cell mediated immunity (GO:0002715),0.03724347408275035,['HLA-E'],1
+54,calcium ion transport (GO:0006816),0.038533401991162425,"['MS4A1', 'TPT1']",1
+55,regulation of T-helper cell differentiation (GO:0045622),0.038533401991162425,['HLA-DRA'],1
+56,regulation of type 2 immune response (GO:0002828),0.038533401991162425,['CD74'],1
+57,cellular response to iron ion (GO:0071281),0.038533401991162425,['B2M'],1
+58,positive regulation of receptor binding (GO:1900122),0.038533401991162425,['B2M'],1
+59,peptide antigen assembly with MHC protein complex (GO:0002501),0.038533401991162425,['HLA-DRA'],1
+60,protection from natural killer cell mediated cytotoxicity (GO:0042270),0.038533401991162425,['HLA-E'],1
+61,regulation of protein binding (GO:0043393),0.038533401991162425,"['RPL11', 'B2M']",1
+62,positive regulation of macromolecule metabolic process (GO:0010604),0.038533401991162425,"['CD74', 'RPL11', 'ACTG1']",1
+63,positive regulation of chemokine (C-X-C motif) ligand 2 production (GO:2000343),0.038533401991162425,['CD74'],1
+64,antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway (GO:0002484),0.038533401991162425,['HLA-E'],1
+65,"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent (GO:0002486)",0.038533401991162425,['HLA-E'],1
+66,response to host defenses (GO:0052200),0.038533401991162425,['B2M'],1
+67,positive regulation of natural killer cell cytokine production (GO:0002729),0.038533401991162425,['HLA-E'],1
+68,positive regulation of unsaturated fatty acid biosynthetic process (GO:2001280),0.038533401991162425,['CD74'],1
+69,regulation of natural killer cell cytokine production (GO:0002727),0.038533401991162425,['HLA-E'],1
+70,regulation of natural killer cell proliferation (GO:0032817),0.038533401991162425,['HLA-E'],1
+71,modulation by symbiont of host defense response (GO:0052031),0.038533401991162425,['B2M'],1
+72,regulation of prostaglandin biosynthetic process (GO:0031392),0.038533401991162425,['CD74'],1
+73,regulation of cell motility (GO:2000145),0.03966990957091606,"['TMSB4X', 'TMSB10']",1
+74,"positive regulation of CD4-positive, alpha-beta T cell differentiation (GO:0043372)",0.03966990957091606,['HLA-DRA'],1
+75,alpha-beta T cell activation (GO:0046631),0.03966990957091606,['HLA-E'],1
+76,antigen processing and presentation of endogenous peptide antigen via MHC class I (GO:0019885),0.03966990957091606,['B2M'],1
+77,"regulation of CD4-positive, alpha-beta T cell activation (GO:2000514)",0.03966990957091606,['HLA-DRA'],1
+78,"regulation of CD8-positive, alpha-beta T cell proliferation (GO:2000564)",0.03966990957091606,['HLA-E'],1
+79,store-operated calcium entry (GO:0002115),0.03966990957091606,['MS4A1'],1
+80,cytoplasmic sequestering of NF-kappaB (GO:0007253),0.03966990957091606,['TMSB4X'],1
+81,regulation of intracellular signal transduction (GO:1902531),0.040146741322399135,"['TMSB4X', 'RPL11', 'DDIT4']",1
+82,positive regulation of ATP biosynthetic process (GO:2001171),0.040146741322399135,['TMSB4X'],1
+83,regulation of RNA polymerase II regulatory region sequence-specific DNA binding (GO:1903025),0.040146741322399135,['TMSB4X'],1
+84,"positive regulation of CD8-positive, alpha-beta T cell activation (GO:2001187)",0.040146741322399135,['HLA-E'],1
+85,"regulation of CD8-positive, alpha-beta T cell activation (GO:2001185)",0.040146741322399135,['HLA-E'],1
+86,positive regulation of ligase activity (GO:0051351),0.040146741322399135,['TMSB4X'],1
+87,positive regulation of macrophage cytokine production (GO:0060907),0.040146741322399135,['CD74'],1
+88,positive regulation of memory T cell differentiation (GO:0043382),0.040146741322399135,['HLA-DRA'],1
+89,negative regulation of ubiquitin protein ligase activity (GO:1904667),0.040146741322399135,['RPL11'],1
+90,regulation of receptor binding (GO:1900120),0.04053303830937007,['B2M'],1
+91,immunoglobulin mediated immune response (GO:0016064),0.04053303830937007,['CD74'],1
+92,positive regulation of monocyte differentiation (GO:0045657),0.04053303830937007,['CD74'],1
+93,negative regulation of receptor binding (GO:1900121),0.04053303830937007,['B2M'],1
+94,regulation of memory T cell differentiation (GO:0043380),0.04053303830937007,['HLA-DRA'],1
+95,positive regulation of viral entry into host cell (GO:0046598),0.04053303830937007,['CD74'],1
+96,modulation by symbiont of host process (GO:0044003),0.04053303830937007,['B2M'],1
+97,positive regulation by symbiont of entry into host (GO:0075294),0.04053303830937007,['CD74'],1
+98,regulation of protein neddylation (GO:2000434),0.04053303830937007,['RPL11'],1
+99,B cell mediated immunity (GO:0019724),0.04325446294363687,['CD74'],1
+100,positive regulation of interleukin-13 production (GO:0032736),0.04325446294363687,['HLA-E'],1
+101,negative regulation of natural killer cell mediated immunity (GO:0002716),0.04325446294363687,['HLA-E'],1
+102,positive regulation of gene expression (GO:0010628),0.044770588527761675,"['CD74', 'RPL11', 'ACTG1']",1
+103,negative regulation of cell division (GO:0051782),0.044770588527761675,['TXNIP'],1
+104,positive regulation of cellular senescence (GO:2000774),0.044770588527761675,['B2M'],1
+105,"regulation of CD4-positive, alpha-beta T cell differentiation (GO:0043370)",0.044770588527761675,['HLA-DRA'],1
+106,morphogenesis of a polarized epithelium (GO:0001738),0.044770588527761675,['ACTG1'],1
+107,"positive regulation of CD4-positive, alpha-beta T cell activation (GO:2000516)",0.044770588527761675,['HLA-DRA'],1
+108,positive regulation of cell aging (GO:0090343),0.044770588527761675,['B2M'],1
+109,regulation of actomyosin structure organization (GO:0110020),0.044770588527761675,['ACTG1'],1
+110,negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902166),0.044770588527761675,['CD74'],1
+111,response to iron ion (GO:0010039),0.044770588527761675,['B2M'],1
+112,regulation of chemokine (C-X-C motif) ligand 2 production (GO:2000341),0.044770588527761675,['CD74'],1
+113,positive regulation of nuclear-transcribed mRNA poly(A) tail shortening (GO:0060213),0.044770588527761675,['BTG2'],1
+114,positive regulation of purine nucleotide biosynthetic process (GO:1900373),0.044770588527761675,['TMSB4X'],1
+115,"negative regulation of DNA damage response, signal transduction by p53 class mediator (GO:0043518)",0.044770588527761675,['CD74'],1
+116,negative regulation of secretion (GO:0051048),0.044770588527761675,['CD74'],1
+117,regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902165),0.044770588527761675,['CD74'],1
+118,positive regulation of regulatory T cell differentiation (GO:0045591),0.044770588527761675,['HLA-DRA'],1
+119,regulation of macrophage cytokine production (GO:0010935),0.044770588527761675,['CD74'],1
+120,cytoplasmic sequestering of transcription factor (GO:0042994),0.044770588527761675,['TMSB4X'],1
+121,positive regulation of type 2 immune response (GO:0002830),0.044770588527761675,['CD74'],1
+122,antigen receptor-mediated signaling pathway (GO:0050851),0.044770588527761675,"['HLA-DRA', 'MS4A1']",1
+123,positive regulation of endothelial cell chemotaxis (GO:2001028),0.044770588527761675,['TMSB4X'],1
+124,negative regulation of leukocyte mediated cytotoxicity (GO:0001911),0.044770588527761675,['HLA-E'],1
+125,calcium ion import into cytosol (GO:1902656),0.044770588527761675,['MS4A1'],1
+126,regulation of endothelial cell chemotaxis (GO:2001026),0.044770588527761675,['TMSB4X'],1
+127,positive regulation of natural killer cell activation (GO:0032816),0.044770588527761675,['HLA-E'],1
+128,negative regulation of ubiquitin-protein transferase activity (GO:0051444),0.044770588527761675,['RPL11'],1
+129,positive regulation of response to cytokine stimulus (GO:0060760),0.044770588527761675,['CD74'],1
+130,neurotrophin TRK receptor signaling pathway (GO:0048011),0.044770588527761675,['DDIT4'],1
+131,regulation of nuclear-transcribed mRNA poly(A) tail shortening (GO:0060211),0.044770588527761675,['BTG2'],1
+132,prostanoid biosynthetic process (GO:0046457),0.044770588527761675,['CD74'],1
+133,protein localization to cell-cell junction (GO:0150105),0.044770588527761675,['ACTG1'],1
+134,positive regulation of alpha-beta T cell proliferation (GO:0046641),0.044770588527761675,['HLA-E'],1
+135,regulation of ATP biosynthetic process (GO:2001169),0.044770588527761675,['TMSB4X'],1
+136,negative regulation of natural killer cell mediated cytotoxicity (GO:0045953),0.044770588527761675,['HLA-E'],1
+137,positive regulation of myeloid leukocyte cytokine production involved in immune response (GO:0061081),0.044770588527761675,['CD74'],1
+138,negative regulation of transcription regulatory region DNA binding (GO:2000678),0.044770588527761675,['TMSB4X'],1
+139,regulation of interleukin-13 production (GO:0032656),0.044770588527761675,['HLA-E'],1
+140,regulation of intrinsic apoptotic signaling pathway in response to DNA damage (GO:1902229),0.044770588527761675,['TPT1'],1
+141,regulation of leukocyte activation (GO:0002694),0.044770588527761675,['CD74'],1
+142,regulation of monocyte differentiation (GO:0045655),0.044770588527761675,['CD74'],1
+143,negative regulation of intracellular signal transduction (GO:1902532),0.04611957565923499,"['TMSB4X', 'DDIT4']",1
+144,negative regulation of intrinsic apoptotic signaling pathway by p53 class mediator (GO:1902254),0.04656923035178603,['CD74'],1
+145,negative regulation of peptidyl-threonine phosphorylation (GO:0010801),0.04656923035178603,['DDIT4'],1
+146,negative regulation of interleukin-8 production (GO:0032717),0.048292911255151554,['TMSB4X'],1
+147,positive regulation of interleukin-4 production (GO:0032753),0.048292911255151554,['HLA-E'],1
+148,negative regulation of signal transduction by p53 class mediator (GO:1901797),0.048292911255151554,['CD74'],1
+149,regulation of T cell cytokine production (GO:0002724),0.04961962699883498,['B2M'],1
+150,negative regulation of nervous system development (GO:0051961),0.04961962699883498,['B2M'],1
+151,positive regulation of neutrophil chemotaxis (GO:0090023),0.04961962699883498,['CD74'],1
+152,prostaglandin biosynthetic process (GO:0001516),0.04961962699883498,['CD74'],1
+0,SRP-dependent cotranslational protein targeting to membrane (GO:0006614),4.056177465354193e-06,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",2
+1,cytoplasmic translation (GO:0002181),4.056177465354193e-06,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",2
+2,cotranslational protein targeting to membrane (GO:0006613),4.056177465354193e-06,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",2
+3,protein targeting to ER (GO:0045047),4.824395942323014e-06,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",2
+4,"nuclear-transcribed mRNA catabolic process, nonsense-mediated decay (GO:0000184)",6.149757368207969e-06,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",2
+5,antigen processing and presentation of endogenous peptide antigen (GO:0002483),2.075835383429735e-05,"['HLA-DRA', 'B2M', 'HLA-E']",2
+6,peptide biosynthetic process (GO:0043043),2.651346263499792e-05,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",2
+7,nuclear-transcribed mRNA catabolic process (GO:0000956),3.032944450555642e-05,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",2
+8,translation (GO:0006412),8.15190984158129e-05,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",2
+9,positive regulation of T cell mediated immunity (GO:0002711),0.00024091506002521792,"['HLA-DRA', 'B2M', 'HLA-E']",2
+10,cellular macromolecule biosynthetic process (GO:0034645),0.0004324206914632178,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",2
+11,gene expression (GO:0010467),0.0007258886374571986,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",2
+12,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-independent (GO:0002480)",0.0008216333077943834,"['B2M', 'HLA-E']",2
+13,interferon-gamma-mediated signaling pathway (GO:0060333),0.0011430504026425684,"['HLA-DRA', 'B2M', 'HLA-E']",2
+14,sequestering of actin monomers (GO:0042989),0.0011430504026425684,"['TMSB4X', 'TMSB10']",2
+15,cellular protein metabolic process (GO:0044267),0.0011599573224752842,"['RPS8', 'RPL11', 'RPS6', 'RPS11', 'RPL19']",2
+16,antigen processing and presentation of exogenous peptide antigen (GO:0002478),0.0033634340588045153,"['CD74', 'HLA-DRA', 'HLA-E']",2
+17,positive regulation of alpha-beta T cell activation (GO:0046635),0.0039978374414207036,"['HLA-DRA', 'HLA-E']",2
+18,cellular response to interferon-gamma (GO:0071346),0.004844517655625386,"['HLA-DRA', 'B2M', 'HLA-E']",2
+19,negative regulation of actin filament polymerization (GO:0030837),0.0055749844187833525,"['TMSB4X', 'TMSB10']",2
+20,negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage (GO:1902230),0.0055749844187833525,"['CD74', 'TPT1']",2
+21,positive regulation of T cell mediated cytotoxicity (GO:0001916),0.0055749844187833525,"['HLA-DRA', 'HLA-E']",2
+22,regulation of T cell mediated cytotoxicity (GO:0001914),0.006649677580675513,"['HLA-DRA', 'HLA-E']",2
+23,negative regulation of response to DNA damage stimulus (GO:2001021),0.007289935890371812,"['CD74', 'TPT1']",2
+24,antigen processing and presentation of peptide antigen via MHC class I (GO:0002474),0.007631715723842814,"['B2M', 'HLA-E']",2
+25,positive regulation of cytokine production involved in immune response (GO:0002720),0.007631715723842814,"['B2M', 'HLA-E']",2
+26,rRNA metabolic process (GO:0016072),0.008021192330621423,"['RPL11', 'RPS6', 'RPL19']",2
+27,retina homeostasis (GO:0001895),0.00844041045557364,"['B2M', 'ACTG1']",2
+28,regulation of cell migration (GO:0030334),0.008740707987258393,"['CD74', 'TMSB4X', 'TMSB10', 'ACTG1']",2
+29,rRNA processing (GO:0006364),0.008740707987258393,"['RPL11', 'RPS6', 'RPL19']",2
+30,regulation of immune response (GO:0050776),0.009339446819772883,"['HLA-DRA', 'B2M', 'HLA-E']",2
+31,positive regulation of leukocyte mediated cytotoxicity (GO:0001912),0.01054138462446233,"['HLA-DRA', 'HLA-E']",2
+32,ribosome biogenesis (GO:0042254),0.01075010788304791,"['RPL11', 'RPS6', 'RPL19']",2
+33,ncRNA processing (GO:0034470),0.011910992822433969,"['RPL11', 'RPS6', 'RPL19']",2
+34,positive regulation of protein binding (GO:0032092),0.017484903908341457,"['RPL11', 'B2M']",2
+35,ribonucleoprotein complex biogenesis (GO:0022613),0.018180638908410807,"['RPL11', 'RPS6']",2
+36,protein tetramerization (GO:0051262),0.02467193914976852,"['B2M', 'MS4A1']",2
+37,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-dependent (GO:0002479)",0.025374677831777933,"['B2M', 'HLA-E']",2
+38,positive regulation of immune response (GO:0050778),0.02542388766475268,"['CD74', 'HLA-DRA']",2
+39,positive regulation of lymphocyte proliferation (GO:0050671),0.02542388766475268,"['CD74', 'HLA-E']",2
+40,antigen processing and presentation of exogenous peptide antigen via MHC class I (GO:0042590),0.02679358313489366,"['B2M', 'HLA-E']",2
+41,regulation of interleukin-8 production (GO:0032677),0.028118156496156854,"['CD74', 'TMSB4X']",2
+42,cytokine-mediated signaling pathway (GO:0019221),0.028118156496156854,"['TMSB4X', 'HLA-DRA', 'B2M', 'HLA-E']",2
+43,innate immune response (GO:0045087),0.029420092283025306,"['CD74', 'B2M', 'HLA-E']",2
+44,positive regulation of binding (GO:0051099),0.03232448248186749,"['RPL11', 'B2M']",2
+45,antigen processing and presentation of exogenous peptide antigen via MHC class II (GO:0019886),0.03724347408275035,"['CD74', 'HLA-DRA']",2
+46,antigen processing and presentation of peptide antigen via MHC class II (GO:0002495),0.03724347408275035,"['CD74', 'HLA-DRA']",2
+47,"positive regulation of CD4-positive, CD25-positive, alpha-beta regulatory T cell differentiation (GO:0032831)",0.03724347408275035,['HLA-DRA'],2
+48,negative regulation of RNA polymerase II regulatory region sequence-specific DNA binding (GO:1903026),0.03724347408275035,['TMSB4X'],2
+49,positive regulation of natural killer cell proliferation (GO:0032819),0.03724347408275035,['HLA-E'],2
+50,cellular response to nicotine (GO:0071316),0.03724347408275035,['B2M'],2
+51,positive regulation of prostaglandin biosynthetic process (GO:0031394),0.03724347408275035,['CD74'],2
+52,tight junction organization (GO:0120193),0.03724347408275035,['ACTG1'],2
+53,regulation of natural killer cell mediated immunity (GO:0002715),0.03724347408275035,['HLA-E'],2
+54,calcium ion transport (GO:0006816),0.038533401991162425,"['MS4A1', 'TPT1']",2
+55,regulation of T-helper cell differentiation (GO:0045622),0.038533401991162425,['HLA-DRA'],2
+56,regulation of type 2 immune response (GO:0002828),0.038533401991162425,['CD74'],2
+57,cellular response to iron ion (GO:0071281),0.038533401991162425,['B2M'],2
+58,positive regulation of receptor binding (GO:1900122),0.038533401991162425,['B2M'],2
+59,peptide antigen assembly with MHC protein complex (GO:0002501),0.038533401991162425,['HLA-DRA'],2
+60,protection from natural killer cell mediated cytotoxicity (GO:0042270),0.038533401991162425,['HLA-E'],2
+61,regulation of protein binding (GO:0043393),0.038533401991162425,"['RPL11', 'B2M']",2
+62,positive regulation of macromolecule metabolic process (GO:0010604),0.038533401991162425,"['CD74', 'RPL11', 'ACTG1']",2
+63,positive regulation of chemokine (C-X-C motif) ligand 2 production (GO:2000343),0.038533401991162425,['CD74'],2
+64,antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway (GO:0002484),0.038533401991162425,['HLA-E'],2
+65,"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent (GO:0002486)",0.038533401991162425,['HLA-E'],2
+66,response to host defenses (GO:0052200),0.038533401991162425,['B2M'],2
+67,positive regulation of natural killer cell cytokine production (GO:0002729),0.038533401991162425,['HLA-E'],2
+68,positive regulation of unsaturated fatty acid biosynthetic process (GO:2001280),0.038533401991162425,['CD74'],2
+69,regulation of natural killer cell cytokine production (GO:0002727),0.038533401991162425,['HLA-E'],2
+70,regulation of natural killer cell proliferation (GO:0032817),0.038533401991162425,['HLA-E'],2
+71,modulation by symbiont of host defense response (GO:0052031),0.038533401991162425,['B2M'],2
+72,regulation of prostaglandin biosynthetic process (GO:0031392),0.038533401991162425,['CD74'],2
+73,regulation of cell motility (GO:2000145),0.03966990957091606,"['TMSB4X', 'TMSB10']",2
+74,"positive regulation of CD4-positive, alpha-beta T cell differentiation (GO:0043372)",0.03966990957091606,['HLA-DRA'],2
+75,alpha-beta T cell activation (GO:0046631),0.03966990957091606,['HLA-E'],2
+76,antigen processing and presentation of endogenous peptide antigen via MHC class I (GO:0019885),0.03966990957091606,['B2M'],2
+77,"regulation of CD4-positive, alpha-beta T cell activation (GO:2000514)",0.03966990957091606,['HLA-DRA'],2
+78,"regulation of CD8-positive, alpha-beta T cell proliferation (GO:2000564)",0.03966990957091606,['HLA-E'],2
+79,store-operated calcium entry (GO:0002115),0.03966990957091606,['MS4A1'],2
+80,cytoplasmic sequestering of NF-kappaB (GO:0007253),0.03966990957091606,['TMSB4X'],2
+81,regulation of intracellular signal transduction (GO:1902531),0.040146741322399135,"['TMSB4X', 'RPL11', 'DDIT4']",2
+82,positive regulation of ATP biosynthetic process (GO:2001171),0.040146741322399135,['TMSB4X'],2
+83,regulation of RNA polymerase II regulatory region sequence-specific DNA binding (GO:1903025),0.040146741322399135,['TMSB4X'],2
+84,"positive regulation of CD8-positive, alpha-beta T cell activation (GO:2001187)",0.040146741322399135,['HLA-E'],2
+85,"regulation of CD8-positive, alpha-beta T cell activation (GO:2001185)",0.040146741322399135,['HLA-E'],2
+86,positive regulation of ligase activity (GO:0051351),0.040146741322399135,['TMSB4X'],2
+87,positive regulation of macrophage cytokine production (GO:0060907),0.040146741322399135,['CD74'],2
+88,positive regulation of memory T cell differentiation (GO:0043382),0.040146741322399135,['HLA-DRA'],2
+89,negative regulation of ubiquitin protein ligase activity (GO:1904667),0.040146741322399135,['RPL11'],2
+90,regulation of receptor binding (GO:1900120),0.04053303830937007,['B2M'],2
+91,immunoglobulin mediated immune response (GO:0016064),0.04053303830937007,['CD74'],2
+92,positive regulation of monocyte differentiation (GO:0045657),0.04053303830937007,['CD74'],2
+93,negative regulation of receptor binding (GO:1900121),0.04053303830937007,['B2M'],2
+94,regulation of memory T cell differentiation (GO:0043380),0.04053303830937007,['HLA-DRA'],2
+95,positive regulation of viral entry into host cell (GO:0046598),0.04053303830937007,['CD74'],2
+96,modulation by symbiont of host process (GO:0044003),0.04053303830937007,['B2M'],2
+97,positive regulation by symbiont of entry into host (GO:0075294),0.04053303830937007,['CD74'],2
+98,regulation of protein neddylation (GO:2000434),0.04053303830937007,['RPL11'],2
+99,B cell mediated immunity (GO:0019724),0.04325446294363687,['CD74'],2
+100,positive regulation of interleukin-13 production (GO:0032736),0.04325446294363687,['HLA-E'],2
+101,negative regulation of natural killer cell mediated immunity (GO:0002716),0.04325446294363687,['HLA-E'],2
+102,positive regulation of gene expression (GO:0010628),0.044770588527761675,"['CD74', 'RPL11', 'ACTG1']",2
+103,negative regulation of cell division (GO:0051782),0.044770588527761675,['TXNIP'],2
+104,positive regulation of cellular senescence (GO:2000774),0.044770588527761675,['B2M'],2
+105,"regulation of CD4-positive, alpha-beta T cell differentiation (GO:0043370)",0.044770588527761675,['HLA-DRA'],2
+106,morphogenesis of a polarized epithelium (GO:0001738),0.044770588527761675,['ACTG1'],2
+107,"positive regulation of CD4-positive, alpha-beta T cell activation (GO:2000516)",0.044770588527761675,['HLA-DRA'],2
+108,positive regulation of cell aging (GO:0090343),0.044770588527761675,['B2M'],2
+109,regulation of actomyosin structure organization (GO:0110020),0.044770588527761675,['ACTG1'],2
+110,negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902166),0.044770588527761675,['CD74'],2
+111,response to iron ion (GO:0010039),0.044770588527761675,['B2M'],2
+112,regulation of chemokine (C-X-C motif) ligand 2 production (GO:2000341),0.044770588527761675,['CD74'],2
+113,positive regulation of nuclear-transcribed mRNA poly(A) tail shortening (GO:0060213),0.044770588527761675,['BTG2'],2
+114,positive regulation of purine nucleotide biosynthetic process (GO:1900373),0.044770588527761675,['TMSB4X'],2
+115,"negative regulation of DNA damage response, signal transduction by p53 class mediator (GO:0043518)",0.044770588527761675,['CD74'],2
+116,negative regulation of secretion (GO:0051048),0.044770588527761675,['CD74'],2
+117,regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902165),0.044770588527761675,['CD74'],2
+118,positive regulation of regulatory T cell differentiation (GO:0045591),0.044770588527761675,['HLA-DRA'],2
+119,regulation of macrophage cytokine production (GO:0010935),0.044770588527761675,['CD74'],2
+120,cytoplasmic sequestering of transcription factor (GO:0042994),0.044770588527761675,['TMSB4X'],2
+121,positive regulation of type 2 immune response (GO:0002830),0.044770588527761675,['CD74'],2
+122,antigen receptor-mediated signaling pathway (GO:0050851),0.044770588527761675,"['HLA-DRA', 'MS4A1']",2
+123,positive regulation of endothelial cell chemotaxis (GO:2001028),0.044770588527761675,['TMSB4X'],2
+124,negative regulation of leukocyte mediated cytotoxicity (GO:0001911),0.044770588527761675,['HLA-E'],2
+125,calcium ion import into cytosol (GO:1902656),0.044770588527761675,['MS4A1'],2
+126,regulation of endothelial cell chemotaxis (GO:2001026),0.044770588527761675,['TMSB4X'],2
+127,positive regulation of natural killer cell activation (GO:0032816),0.044770588527761675,['HLA-E'],2
+128,negative regulation of ubiquitin-protein transferase activity (GO:0051444),0.044770588527761675,['RPL11'],2
+129,positive regulation of response to cytokine stimulus (GO:0060760),0.044770588527761675,['CD74'],2
+130,neurotrophin TRK receptor signaling pathway (GO:0048011),0.044770588527761675,['DDIT4'],2
+131,regulation of nuclear-transcribed mRNA poly(A) tail shortening (GO:0060211),0.044770588527761675,['BTG2'],2
+132,prostanoid biosynthetic process (GO:0046457),0.044770588527761675,['CD74'],2
+133,protein localization to cell-cell junction (GO:0150105),0.044770588527761675,['ACTG1'],2
+134,positive regulation of alpha-beta T cell proliferation (GO:0046641),0.044770588527761675,['HLA-E'],2
+135,regulation of ATP biosynthetic process (GO:2001169),0.044770588527761675,['TMSB4X'],2
+136,negative regulation of natural killer cell mediated cytotoxicity (GO:0045953),0.044770588527761675,['HLA-E'],2
+137,positive regulation of myeloid leukocyte cytokine production involved in immune response (GO:0061081),0.044770588527761675,['CD74'],2
+138,negative regulation of transcription regulatory region DNA binding (GO:2000678),0.044770588527761675,['TMSB4X'],2
+139,regulation of interleukin-13 production (GO:0032656),0.044770588527761675,['HLA-E'],2
+140,regulation of intrinsic apoptotic signaling pathway in response to DNA damage (GO:1902229),0.044770588527761675,['TPT1'],2
+141,regulation of leukocyte activation (GO:0002694),0.044770588527761675,['CD74'],2
+142,regulation of monocyte differentiation (GO:0045655),0.044770588527761675,['CD74'],2
+143,negative regulation of intracellular signal transduction (GO:1902532),0.04611957565923499,"['TMSB4X', 'DDIT4']",2
+144,negative regulation of intrinsic apoptotic signaling pathway by p53 class mediator (GO:1902254),0.04656923035178603,['CD74'],2
+145,negative regulation of peptidyl-threonine phosphorylation (GO:0010801),0.04656923035178603,['DDIT4'],2
+146,negative regulation of interleukin-8 production (GO:0032717),0.048292911255151554,['TMSB4X'],2
+147,positive regulation of interleukin-4 production (GO:0032753),0.048292911255151554,['HLA-E'],2
+148,negative regulation of signal transduction by p53 class mediator (GO:1901797),0.048292911255151554,['CD74'],2
+149,regulation of T cell cytokine production (GO:0002724),0.04961962699883498,['B2M'],2
+150,negative regulation of nervous system development (GO:0051961),0.04961962699883498,['B2M'],2
+151,positive regulation of neutrophil chemotaxis (GO:0090023),0.04961962699883498,['CD74'],2
+152,prostaglandin biosynthetic process (GO:0001516),0.04961962699883498,['CD74'],2
+0,SRP-dependent cotranslational protein targeting to membrane (GO:0006614),7.873316092284113e-17,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29', 'RPS21', 'RPS12']",3
+1,cotranslational protein targeting to membrane (GO:0006613),7.873316092284113e-17,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29', 'RPS21', 'RPS12']",3
+2,protein targeting to ER (GO:0045047),1.3640204938625834e-16,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29', 'RPS21', 'RPS12']",3
+3,"nuclear-transcribed mRNA catabolic process, nonsense-mediated decay (GO:0000184)",2.6802473414236576e-16,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29', 'RPS21', 'RPS12']",3
+4,translation (GO:0006412),1.384248669407799e-15,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'EEF2', 'RPL8', 'RPL29', 'RPS21', 'RPS12']",3
+5,cytoplasmic translation (GO:0002181),5.057763021357861e-15,"['RPS15', 'RPL3', 'RPLP1', 'RPL13A', 'RPS2', 'RPL8', 'RPL29', 'RPS21', 'RPS12']",3
+6,peptide biosynthetic process (GO:0043043),6.234074320543146e-15,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29', 'RPS21', 'RPS12']",3
+7,nuclear-transcribed mRNA catabolic process (GO:0000956),9.471338825644101e-15,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29', 'RPS21', 'RPS12']",3
+8,cellular macromolecule biosynthetic process (GO:0034645),5.4464032231652364e-14,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'EEF2', 'RPL8', 'RPL29', 'RPS21', 'RPS12']",3
+9,gene expression (GO:0010467),1.225383709411247e-11,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29', 'RPS21', 'RPS12']",3
+10,rRNA metabolic process (GO:0016072),4.529723875581664e-11,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29']",3
+11,cellular protein metabolic process (GO:0044267),4.919159686013722e-11,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29', 'RPS21', 'RPS12']",3
+12,rRNA processing (GO:0006364),6.51824751981287e-11,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29']",3
+13,ribosome biogenesis (GO:0042254),1.4018963263284606e-10,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29']",3
+14,ncRNA processing (GO:0034470),1.8911425100847957e-10,"['RPS15', 'RPL3', 'RPLP1', 'RPLP2', 'RPL13A', 'RPS2', 'RPL8', 'RPL29']",3
+15,ribosome assembly (GO:0042255),0.01950559285347111,"['RPS15', 'RPL3']",3
+0,negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage (GO:1902230),0.00044667259654135425,"['CD74', 'MIF', 'TPT1']",4
+1,negative regulation of response to DNA damage stimulus (GO:2001021),0.00044667259654135425,"['CD74', 'MIF', 'TPT1']",4
+2,neutrophil degranulation (GO:0043312),0.00044667259654135425,"['TUBB', 'HLA-C', 'MIF', 'EEF2', 'B2M', 'FTL']",4
+3,neutrophil activation involved in immune response (GO:0002283),0.00044667259654135425,"['TUBB', 'HLA-C', 'MIF', 'EEF2', 'B2M', 'FTL']",4
+4,cellular response to interferon-gamma (GO:0071346),0.00044667259654135425,"['HLA-C', 'HLA-DRA', 'B2M', 'GAPDH']",4
+5,neutrophil mediated immunity (GO:0002446),0.00044667259654135425,"['TUBB', 'HLA-C', 'MIF', 'EEF2', 'B2M', 'FTL']",4
+6,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-independent (GO:0002480)",0.0017114205305210196,"['HLA-C', 'B2M']",4
+7,interferon-gamma-mediated signaling pathway (GO:0060333),0.0023229063679751083,"['HLA-C', 'HLA-DRA', 'B2M']",4
+8,translation (GO:0006412),0.0026893388672828856,"['RPLP1', 'RPS6', 'EEF2', 'RPL8']",4
+9,negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902166),0.0026893388672828856,"['CD74', 'MIF']",4
+10,antigen processing and presentation of endogenous peptide antigen (GO:0002483),0.0026893388672828856,"['HLA-DRA', 'B2M']",4
+11,"negative regulation of DNA damage response, signal transduction by p53 class mediator (GO:0043518)",0.0026893388672828856,"['CD74', 'MIF']",4
+12,regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902165),0.0026893388672828856,"['CD74', 'MIF']",4
+13,positive regulation of gene expression (GO:0010628),0.0026893388672828856,"['CD74', 'MIF', 'EEF2', 'GAPDH', 'ACTG1']",4
+14,SRP-dependent cotranslational protein targeting to membrane (GO:0006614),0.0026893388672828856,"['RPLP1', 'RPS6', 'RPL8']",4
+15,prostanoid biosynthetic process (GO:0046457),0.0026893388672828856,"['CD74', 'MIF']",4
+16,cytoplasmic translation (GO:0002181),0.0026893388672828856,"['RPLP1', 'RPS6', 'RPL8']",4
+17,cotranslational protein targeting to membrane (GO:0006613),0.0026893388672828856,"['RPLP1', 'RPS6', 'RPL8']",4
+18,regulation of leukocyte activation (GO:0002694),0.0026893388672828856,"['CD74', 'MIF']",4
+19,negative regulation of intrinsic apoptotic signaling pathway by p53 class mediator (GO:1902254),0.0028937880070599893,"['CD74', 'MIF']",4
+20,protein targeting to ER (GO:0045047),0.0029577839141228415,"['RPLP1', 'RPS6', 'RPL8']",4
+21,negative regulation of signal transduction by p53 class mediator (GO:1901797),0.0029577839141228415,"['CD74', 'MIF']",4
+22,prostaglandin biosynthetic process (GO:0001516),0.0031601364892513014,"['CD74', 'MIF']",4
+23,"nuclear-transcribed mRNA catabolic process, nonsense-mediated decay (GO:0000184)",0.003515172220796966,"['RPLP1', 'RPS6', 'RPL8']",4
+24,cellular macromolecule biosynthetic process (GO:0034645),0.004126141336464396,"['RPLP1', 'RPS6', 'EEF2', 'RPL8']",4
+25,cytoskeleton-dependent intracellular transport (GO:0030705),0.004126141336464396,"['TUBA1B', 'TUBB']",4
+26,negative regulation of actin filament polymerization (GO:0030837),0.004705806316279503,"['TMSB4X', 'PFN1']",4
+27,cytokine-mediated signaling pathway (GO:0019221),0.004743530851405978,"['TMSB4X', 'HLA-C', 'HLA-DRA', 'MIF', 'B2M']",4
+28,regulation of actin filament bundle assembly (GO:0032231),0.004743530851405978,"['PFN1', 'ACTG1']",4
+29,positive regulation of fibroblast proliferation (GO:0048146),0.005154969289705247,"['CD74', 'MIF']",4
+30,"regulation of DNA damage response, signal transduction by p53 class mediator (GO:0043516)",0.005154969289705247,"['CD74', 'MIF']",4
+31,transition metal ion homeostasis (GO:0055076),0.005360580655141334,"['B2M', 'FTL']",4
+32,positive regulation of B cell proliferation (GO:0030890),0.005402389872868533,"['CD74', 'MIF']",4
+33,regulation of macrophage activation (GO:0043030),0.005402389872868533,"['CD74', 'MIF']",4
+34,prostaglandin metabolic process (GO:0006693),0.0056066093256826235,"['CD74', 'MIF']",4
+35,antigen processing and presentation of peptide antigen via MHC class I (GO:0002474),0.006181963274510666,"['HLA-C', 'B2M']",4
+36,rRNA metabolic process (GO:0016072),0.0063922313701778675,"['RPLP1', 'RPS6', 'RPL8']",4
+37,peptide biosynthetic process (GO:0043043),0.0063922313701778675,"['RPLP1', 'RPS6', 'RPL8']",4
+38,retina homeostasis (GO:0001895),0.006626664685219603,"['B2M', 'ACTG1']",4
+39,positive regulation of T cell mediated immunity (GO:0002711),0.006626664685219603,"['HLA-DRA', 'B2M']",4
+40,nuclear-transcribed mRNA catabolic process (GO:0000956),0.006839633002898252,"['RPLP1', 'RPS6', 'RPL8']",4
+41,regulation of cell migration (GO:0030334),0.006839633002898252,"['CD74', 'TMSB4X', 'MIF', 'ACTG1']",4
+42,rRNA processing (GO:0006364),0.006839633002898252,"['RPLP1', 'RPS6', 'RPL8']",4
+43,regulation of immune response (GO:0050776),0.007380122312128222,"['HLA-C', 'HLA-DRA', 'B2M']",4
+44,ribosome biogenesis (GO:0042254),0.008841941504468851,"['RPLP1', 'RPS6', 'RPL8']",4
+45,regulation of B cell proliferation (GO:0030888),0.009209909317176372,"['CD74', 'MIF']",4
+46,regulation of fibroblast proliferation (GO:0048145),0.009209909317176372,"['CD74', 'MIF']",4
+47,ncRNA processing (GO:0034470),0.009462786274563957,"['RPLP1', 'RPS6', 'RPL8']",4
+48,positive regulation of B cell activation (GO:0050871),0.01171238305922927,"['CD74', 'MIF']",4
+49,iron ion homeostasis (GO:0055072),0.015170253197297033,"['B2M', 'FTL']",4
+50,regulation of neurogenesis (GO:0050767),0.015359358762117007,"['HMGB2', 'B2M']",4
+51,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-dependent (GO:0002479)",0.020738276064909925,"['HLA-C', 'B2M']",4
+52,regulation of stress fiber assembly (GO:0051492),0.020738276064909925,"['PFN1', 'ACTG1']",4
+53,positive regulation of immune response (GO:0050778),0.020738276064909925,"['CD74', 'HLA-DRA']",4
+54,positive regulation of lymphocyte proliferation (GO:0050671),0.020738276064909925,"['CD74', 'MIF']",4
+55,antigen processing and presentation of exogenous peptide antigen via MHC class I (GO:0042590),0.022001891291024873,"['HLA-C', 'B2M']",4
+56,response to interferon-gamma (GO:0034341),0.02271879114847344,"['CD74', 'GAPDH']",4
+57,regulation of interleukin-8 production (GO:0032677),0.022878637857753334,"['CD74', 'TMSB4X']",4
+58,positive regulation of binding (GO:0051099),0.02765193143294717,"['HMGB2', 'B2M']",4
+59,regulation of peptidyl-tyrosine phosphorylation (GO:0050730),0.028385950633170086,"['CD74', 'MIF']",4
+60,antigen processing and presentation of exogenous peptide antigen via MHC class II (GO:0019886),0.030832077227192285,"['CD74', 'HLA-DRA']",4
+61,regulation of peptidyl-serine phosphorylation (GO:0033135),0.030832077227192285,"['DDIT4', 'MIF']",4
+62,positive regulation of cytokine production (GO:0001819),0.030832077227192285,"['CD74', 'MIF', 'GAPDH']",4
+63,antigen processing and presentation of peptide antigen via MHC class II (GO:0002495),0.030899714994111645,"['CD74', 'HLA-DRA']",4
+64,antigen processing and presentation of exogenous peptide antigen (GO:0002478),0.030899714994111645,"['CD74', 'HLA-DRA']",4
+65,"positive regulation of CD4-positive, CD25-positive, alpha-beta regulatory T cell differentiation (GO:0032831)",0.030899714994111645,['HLA-DRA'],4
+66,negative regulation of macrophage chemotaxis (GO:0010760),0.030899714994111645,['MIF'],4
+67,intracellular sequestering of iron ion (GO:0006880),0.030899714994111645,['FTL'],4
+68,negative regulation of RNA polymerase II regulatory region sequence-specific DNA binding (GO:1903026),0.030899714994111645,['TMSB4X'],4
+69,cellular response to nicotine (GO:0071316),0.030899714994111645,['B2M'],4
+70,positive regulation of prostaglandin biosynthetic process (GO:0031394),0.030899714994111645,['CD74'],4
+71,tight junction organization (GO:0120193),0.030899714994111645,['ACTG1'],4
+72,peptidyl-cysteine S-nitrosylation (GO:0018119),0.030899714994111645,['GAPDH'],4
+73,gene expression (GO:0010467),0.031099271410962304,"['RPLP1', 'RPS6', 'RPL8']",4
+74,regulation of apoptotic process (GO:0042981),0.03299429599718069,"['CD74', 'RPS6', 'MIF', 'TPT1']",4
+75,negative regulation of cell motility (GO:2000146),0.03299429599718069,"['CD74', 'MIF']",4
+76,regulation of T-helper cell differentiation (GO:0045622),0.03299429599718069,['HLA-DRA'],4
+77,regulation of type 2 immune response (GO:0002828),0.03299429599718069,['CD74'],4
+78,cellular response to iron ion (GO:0071281),0.03299429599718069,['B2M'],4
+79,positive regulation of receptor binding (GO:1900122),0.03299429599718069,['B2M'],4
+80,peptide antigen assembly with MHC protein complex (GO:0002501),0.03299429599718069,['HLA-DRA'],4
+81,regulation of nuclease activity (GO:0032069),0.03299429599718069,['HMGB2'],4
+82,negative regulation of programmed cell death (GO:0043069),0.03347012533092606,"['CD74', 'MIF', 'TPT1']",4
+83,protein homooligomerization (GO:0051260),0.03456085806541641,"['MIF', 'B2M']",4
+84,positive regulation of chemokine (C-X-C motif) ligand 2 production (GO:2000343),0.03466986971615072,['CD74'],4
+85,antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway (GO:0002484),0.03466986971615072,['HLA-C'],4
+86,"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent (GO:0002486)",0.03466986971615072,['HLA-C'],4
+87,response to host defenses (GO:0052200),0.03466986971615072,['B2M'],4
+88,positive regulation of unsaturated fatty acid biosynthetic process (GO:2001280),0.03466986971615072,['CD74'],4
+89,modulation by symbiont of host defense response (GO:0052031),0.03466986971615072,['B2M'],4
+90,regulation of prostaglandin biosynthetic process (GO:0031392),0.03466986971615072,['CD74'],4
+91,positive regulation of peptidyl-tyrosine phosphorylation (GO:0050731),0.036775072902475794,"['CD74', 'MIF']",4
+92,cellular protein metabolic process (GO:0044267),0.036775072902475794,"['RPLP1', 'RPS6', 'RPL8']",4
+93,"positive regulation of CD4-positive, alpha-beta T cell differentiation (GO:0043372)",0.036775072902475794,['HLA-DRA'],4
+94,antigen processing and presentation of endogenous peptide antigen via MHC class I (GO:0019885),0.036775072902475794,['B2M'],4
+95,"regulation of CD4-positive, alpha-beta T cell activation (GO:2000514)",0.036775072902475794,['HLA-DRA'],4
+96,negative regulation of macrophage migration (GO:1905522),0.036775072902475794,['MIF'],4
+97,cytoplasmic sequestering of NF-kappaB (GO:0007253),0.036775072902475794,['TMSB4X'],4
+98,positive regulation of ATP biosynthetic process (GO:2001171),0.03795309466696627,['TMSB4X'],4
+99,regulation of RNA polymerase II regulatory region sequence-specific DNA binding (GO:1903025),0.03795309466696627,['TMSB4X'],4
+100,positive regulation of ligase activity (GO:0051351),0.03795309466696627,['TMSB4X'],4
+101,positive regulation of macrophage cytokine production (GO:0060907),0.03795309466696627,['CD74'],4
+102,positive regulation of megakaryocyte differentiation (GO:0045654),0.03795309466696627,['HMGB2'],4
+103,positive regulation of memory T cell differentiation (GO:0043382),0.03795309466696627,['HLA-DRA'],4
+104,positive regulation of protein kinase A signaling (GO:0010739),0.03795309466696627,['MIF'],4
+105,DNA topological change (GO:0006265),0.03795309466696627,['HMGB2'],4
+106,negative regulation of cell migration (GO:0030336),0.03795309466696627,"['CD74', 'MIF']",4
+107,regulation of cytokine production (GO:0001817),0.03846731560873984,"['MIF', 'GAPDH']",4
+108,regulation of receptor binding (GO:1900120),0.03846731560873984,['B2M'],4
+109,immunoglobulin mediated immune response (GO:0016064),0.03846731560873984,['CD74'],4
+110,positive regulation of monocyte differentiation (GO:0045657),0.03846731560873984,['CD74'],4
+111,negative regulation of receptor binding (GO:1900121),0.03846731560873984,['B2M'],4
+112,sequestering of actin monomers (GO:0042989),0.03846731560873984,['TMSB4X'],4
+113,regulation of memory T cell differentiation (GO:0043380),0.03846731560873984,['HLA-DRA'],4
+114,positive regulation of viral entry into host cell (GO:0046598),0.03846731560873984,['CD74'],4
+115,modulation by symbiont of host process (GO:0044003),0.03846731560873984,['B2M'],4
+116,positive regulation by symbiont of entry into host (GO:0075294),0.03846731560873984,['CD74'],4
+117,B cell mediated immunity (GO:0019724),0.04158316324110003,['CD74'],4
+118,V(D)J recombination (GO:0033151),0.04158316324110003,['HMGB2'],4
+119,positive regulation of cell population proliferation (GO:0008284),0.042080753232262715,"['CD74', 'RPS6', 'MIF']",4
+120,negative regulation of apoptotic process (GO:0043066),0.0428229482875486,"['CD74', 'MIF', 'TPT1']",4
+121,positive regulation of cellular senescence (GO:2000774),0.0428229482875486,['B2M'],4
+122,"regulation of CD4-positive, alpha-beta T cell differentiation (GO:0043370)",0.0428229482875486,['HLA-DRA'],4
+123,negative regulation of leukocyte chemotaxis (GO:0002689),0.0428229482875486,['MIF'],4
+124,regulation of nucleobase-containing compound metabolic process (GO:0019219),0.0428229482875486,['PCBP1'],4
+125,morphogenesis of a polarized epithelium (GO:0001738),0.0428229482875486,['ACTG1'],4
+126,positive regulation of I-kappaB kinase/NF-kappaB signaling (GO:0043123),0.04296001081402963,"['CD74', 'GAPDH']",4
+127,positive regulation of ERK1 and ERK2 cascade (GO:0070374),0.04296001081402963,"['CD74', 'MIF']",4
+128,"positive regulation of CD4-positive, alpha-beta T cell activation (GO:2000516)",0.04296001081402963,['HLA-DRA'],4
+129,positive regulation of cell aging (GO:0090343),0.04296001081402963,['B2M'],4
+130,regulation of actomyosin structure organization (GO:0110020),0.04296001081402963,['ACTG1'],4
+131,regulation of cell aging (GO:0090342),0.04296001081402963,['MIF'],4
+132,response to iron ion (GO:0010039),0.04296001081402963,['B2M'],4
+133,regulation of chemokine (C-X-C motif) ligand 2 production (GO:2000341),0.04296001081402963,['CD74'],4
+134,positive regulation of purine nucleotide biosynthetic process (GO:1900373),0.04296001081402963,['TMSB4X'],4
+135,positive regulation of ruffle assembly (GO:1900029),0.04296001081402963,['PFN1'],4
+136,regulation of translation (GO:0006417),0.04397906822301156,"['EEF2', 'GAPDH']",4
+137,protein stabilization (GO:0050821),0.04397906822301156,"['PFN1', 'GAPDH']",4
+138,negative regulation of secretion (GO:0051048),0.04397906822301156,['CD74'],4
+139,positive regulation of regulatory T cell differentiation (GO:0045591),0.04397906822301156,['HLA-DRA'],4
+140,regulation of macrophage cytokine production (GO:0010935),0.04397906822301156,['CD74'],4
+141,cytoplasmic sequestering of transcription factor (GO:0042994),0.04397906822301156,['TMSB4X'],4
+142,positive regulation of type 2 immune response (GO:0002830),0.04397906822301156,['CD74'],4
+143,protein trimerization (GO:0070206),0.0449001847505477,['MIF'],4
+144,positive regulation of endothelial cell chemotaxis (GO:2001028),0.0449001847505477,['TMSB4X'],4
+145,regulation of endothelial cell chemotaxis (GO:2001026),0.0449001847505477,['TMSB4X'],4
+146,positive regulation of response to cytokine stimulus (GO:0060760),0.0449001847505477,['CD74'],4
+147,neurotrophin TRK receptor signaling pathway (GO:0048011),0.0449001847505477,['DDIT4'],4
+148,protein homotrimerization (GO:0070207),0.0449001847505477,['MIF'],4
+149,protein localization to cell-cell junction (GO:0150105),0.0449001847505477,['ACTG1'],4
+150,apoptotic DNA fragmentation (GO:0006309),0.04573646315184529,['HMGB2'],4
+151,regulation of ATP biosynthetic process (GO:2001169),0.04573646315184529,['TMSB4X'],4
+152,positive regulation of myeloid leukocyte cytokine production involved in immune response (GO:0061081),0.04573646315184529,['CD74'],4
+153,killing by host of symbiont cells (GO:0051873),0.04573646315184529,['GAPDH'],4
+154,negative regulation of transcription regulatory region DNA binding (GO:2000678),0.04573646315184529,['TMSB4X'],4
+155,regulation of intrinsic apoptotic signaling pathway in response to DNA damage (GO:1902229),0.04573646315184529,['TPT1'],4
+156,regulation of monocyte differentiation (GO:0045655),0.04573646315184529,['CD74'],4
+157,positive regulation of intracellular signal transduction (GO:1902533),0.04670110259085814,"['CD74', 'MIF', 'GAPDH']",4
+158,negative regulation of intracellular signal transduction (GO:1902532),0.0468472453533762,"['TMSB4X', 'DDIT4']",4
+159,negative regulation of cell aging (GO:0090344),0.047072828008685834,['MIF'],4
+160,regulation of stem cell proliferation (GO:0072091),0.047072828008685834,['HMGB2'],4
+161,negative regulation of peptidyl-threonine phosphorylation (GO:0010801),0.047072828008685834,['DDIT4'],4
+162,generation of neurons (GO:0048699),0.04745424419838775,"['DDIT4', 'HMGB2']",4
+163,negative regulation of interleukin-8 production (GO:0032717),0.048912414274937165,['TMSB4X'],4
+164,DNA conformation change (GO:0071103),0.048912414274937165,['HMGB2'],4
+0,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-independent (GO:0002480)",2.121098522008674e-08,"['HLA-C', 'HLA-A', 'B2M', 'HLA-E']",5
+1,antigen processing and presentation of peptide antigen via MHC class I (GO:0002474),3.119215632860691e-06,"['HLA-C', 'HLA-A', 'B2M', 'HLA-E']",5
+2,antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway (GO:0002484),3.119215632860691e-06,"['HLA-C', 'HLA-A', 'HLA-E']",5
+3,"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent (GO:0002486)",3.119215632860691e-06,"['HLA-C', 'HLA-A', 'HLA-E']",5
+4,cellular response to interferon-gamma (GO:0071346),8.988673425895684e-06,"['HLA-C', 'HLA-A', 'B2M', 'GAPDH', 'HLA-E']",5
+5,antigen processing and presentation of endogenous peptide antigen (GO:0002483),2.153099727726127e-05,"['HLA-A', 'B2M', 'HLA-E']",5
+6,interferon-gamma-mediated signaling pathway (GO:0060333),3.392921690285863e-05,"['HLA-C', 'HLA-A', 'B2M', 'HLA-E']",5
+7,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-dependent (GO:0002479)",3.9551456230654006e-05,"['HLA-C', 'HLA-A', 'B2M', 'HLA-E']",5
+8,antigen processing and presentation of exogenous peptide antigen via MHC class I (GO:0042590),4.5926991614953304e-05,"['HLA-C', 'HLA-A', 'B2M', 'HLA-E']",5
+9,cytokine-mediated signaling pathway (GO:0019221),5.9481704308726915e-05,"['TMSB4X', 'RPLP0', 'HLA-C', 'MIF', 'HLA-A', 'B2M', 'HLA-E']",5
+10,glucose catabolic process to pyruvate (GO:0061718),5.9481704308726915e-05,"['TPI1', 'ALDOC', 'GAPDH']",5
+11,canonical glycolysis (GO:0061621),5.9481704308726915e-05,"['TPI1', 'ALDOC', 'GAPDH']",5
+12,glycolytic process through glucose-6-phosphate (GO:0061620),6.235371574924963e-05,"['TPI1', 'ALDOC', 'GAPDH']",5
+13,glycolytic process (GO:0006096),9.175144320131878e-05,"['TPI1', 'ALDOC', 'GAPDH']",5
+14,positive regulation of cytokine production involved in immune response (GO:0002720),0.00012754095145618604,"['HLA-A', 'B2M', 'HLA-E']",5
+15,positive regulation of T cell mediated immunity (GO:0002711),0.00015617632613297317,"['HLA-A', 'B2M', 'HLA-E']",5
+16,gluconeogenesis (GO:0006094),0.0002066040203357826,"['TPI1', 'ALDOC', 'GAPDH']",5
+17,carbohydrate catabolic process (GO:0016052),0.0002066040203357826,"['TPI1', 'ALDOC', 'GAPDH']",5
+18,hexose biosynthetic process (GO:0019319),0.00024271117096188766,"['TPI1', 'ALDOC', 'GAPDH']",5
+19,protection from natural killer cell mediated cytotoxicity (GO:0042270),0.0002971080023399526,"['HLA-A', 'HLA-E']",5
+20,pyruvate metabolic process (GO:0006090),0.0004319589764135642,"['TPI1', 'ALDOC', 'GAPDH']",5
+21,alpha-beta T cell activation (GO:0046631),0.00044931141281554513,"['HLA-A', 'HLA-E']",5
+22,antigen processing and presentation of endogenous peptide antigen via MHC class I (GO:0019885),0.00044931141281554513,"['HLA-A', 'B2M']",5
+23,"regulation of CD8-positive, alpha-beta T cell proliferation (GO:2000564)",0.00044931141281554513,"['HLA-A', 'HLA-E']",5
+24,regulation of immune response (GO:0050776),0.00044931141281554513,"['HLA-C', 'HLA-A', 'B2M', 'HLA-E']",5
+25,glucose metabolic process (GO:0006006),0.0005002358101334848,"['TPI1', 'ALDOC', 'GAPDH']",5
+26,"positive regulation of CD8-positive, alpha-beta T cell activation (GO:2001187)",0.0005002358101334848,"['HLA-A', 'HLA-E']",5
+27,"regulation of CD8-positive, alpha-beta T cell activation (GO:2001185)",0.0005002358101334848,"['HLA-A', 'HLA-E']",5
+28,cellular response to type I interferon (GO:0071357),0.0005002358101334848,"['HLA-C', 'HLA-A', 'HLA-E']",5
+29,type I interferon signaling pathway (GO:0060337),0.0005002358101334848,"['HLA-C', 'HLA-A', 'HLA-E']",5
+30,defense response to Gram-positive bacterium (GO:0050830),0.000604745594743066,"['HMGB2', 'HLA-A', 'HLA-E']",5
+31,translation (GO:0006412),0.0007050710710473591,"['RPLP1', 'RPLP0', 'RPS2', 'EEF2']",5
+32,neutrophil degranulation (GO:0043312),0.0011261210166543104,"['HLA-C', 'ALDOC', 'MIF', 'EEF2', 'B2M']",5
+33,neutrophil activation involved in immune response (GO:0002283),0.0011261210166543104,"['HLA-C', 'ALDOC', 'MIF', 'EEF2', 'B2M']",5
+34,SRP-dependent cotranslational protein targeting to membrane (GO:0006614),0.0011261210166543104,"['RPLP1', 'RPLP0', 'RPS2']",5
+35,neutrophil mediated immunity (GO:0002446),0.0011261210166543104,"['HLA-C', 'ALDOC', 'MIF', 'EEF2', 'B2M']",5
+36,cytoplasmic translation (GO:0002181),0.001181345646236763,"['RPLP1', 'RPLP0', 'RPS2']",5
+37,cotranslational protein targeting to membrane (GO:0006613),0.001181345646236763,"['RPLP1', 'RPLP0', 'RPS2']",5
+38,positive regulation of alpha-beta T cell proliferation (GO:0046641),0.001181345646236763,"['HLA-A', 'HLA-E']",5
+39,negative regulation of natural killer cell mediated cytotoxicity (GO:0045953),0.001181345646236763,"['HLA-A', 'HLA-E']",5
+40,protein targeting to ER (GO:0045047),0.0014465025977041025,"['RPLP1', 'RPLP0', 'RPS2']",5
+41,regulation of T cell cytokine production (GO:0002724),0.0016003767492447332,"['HLA-A', 'B2M']",5
+42,positive regulation of alpha-beta T cell activation (GO:0046635),0.001735802926265184,"['HLA-A', 'HLA-E']",5
+43,"nuclear-transcribed mRNA catabolic process, nonsense-mediated decay (GO:0000184)",0.0017731399697825405,"['RPLP1', 'RPLP0', 'RPS2']",5
+44,positive regulation of T cell cytokine production (GO:0002726),0.0018321536673810371,"['HLA-A', 'B2M']",5
+45,cellular macromolecule biosynthetic process (GO:0034645),0.002151275374116173,"['RPLP1', 'RPLP0', 'RPS2', 'EEF2']",5
+46,positive regulation of cytokine production (GO:0001819),0.0025962200189968967,"['MIF', 'HLA-A', 'GAPDH', 'HLA-E']",5
+47,negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage (GO:1902230),0.0025962200189968967,"['MIF', 'TPT1']",5
+48,positive regulation of T cell mediated cytotoxicity (GO:0001916),0.0025962200189968967,"['HLA-A', 'HLA-E']",5
+49,regulation of T cell mediated cytotoxicity (GO:0001914),0.003172704727573915,"['HLA-A', 'HLA-E']",5
+50,negative regulation of response to DNA damage stimulus (GO:2001021),0.0035582463315433272,"['MIF', 'TPT1']",5
+51,rRNA metabolic process (GO:0016072),0.00423836212572655,"['RPLP1', 'RPLP0', 'RPS2']",5
+52,peptide biosynthetic process (GO:0043043),0.00423836212572655,"['RPLP1', 'RPLP0', 'RPS2']",5
+53,nuclear-transcribed mRNA catabolic process (GO:0000956),0.004869226503136547,"['RPLP1', 'RPLP0', 'RPS2']",5
+54,rRNA processing (GO:0006364),0.004945115188821126,"['RPLP1', 'RPLP0', 'RPS2']",5
+55,defense response to bacterium (GO:0042742),0.0051056383181267324,"['HMGB2', 'HLA-A', 'HLA-E']",5
+56,regulation of translation (GO:0006417),0.005183410908060317,"['BTG2', 'EEF2', 'GAPDH']",5
+57,positive regulation of leukocyte mediated cytotoxicity (GO:0001912),0.006032410402019686,"['HLA-A', 'HLA-E']",5
+58,antibacterial humoral response (GO:0019731),0.006132629782413683,"['HLA-A', 'HLA-E']",5
+59,ribosome biogenesis (GO:0042254),0.006132629782413683,"['RPLP1', 'RPLP0', 'RPS2']",5
+60,interleukin-12-mediated signaling pathway (GO:0035722),0.006562377718165059,"['RPLP0', 'MIF']",5
+61,positive regulation of neuron death (GO:1901216),0.0066579370177959,"['DDIT4', 'CDK5R1']",5
+62,ncRNA processing (GO:0034470),0.0066579370177959,"['RPLP1', 'RPLP0', 'RPS2']",5
+63,generation of neurons (GO:0048699),0.0066579370177959,"['DDIT4', 'HMGB2', 'CDK5R1']",5
+64,cellular response to interleukin-12 (GO:0071349),0.006703879635228373,"['RPLP0', 'MIF']",5
+65,neuron migration (GO:0001764),0.007161473704656059,"['DDIT4', 'CDK5R1']",5
+66,regulation of neurogenesis (GO:0050767),0.010812006673187501,"['HMGB2', 'B2M']",5
+67,negative regulation of cellular macromolecule biosynthetic process (GO:2000113),0.011629613963031332,"['BTG2', 'HMGB2', 'GAPDH', 'CDK5R1']",5
+68,positive regulation of lymphocyte proliferation (GO:0050671),0.015287064471344081,"['MIF', 'HLA-E']",5
+69,positive regulation of tumor necrosis factor production (GO:0032760),0.01586962667925321,"['MIF', 'HLA-E']",5
+70,positive regulation of tumor necrosis factor superfamily cytokine production (GO:1903557),0.01728373726235111,"['MIF', 'HLA-E']",5
+71,negative regulation of cellular amide metabolic process (GO:0034249),0.019169323827677616,"['BTG2', 'GAPDH']",5
+72,positive regulation of binding (GO:0051099),0.020388421818923193,"['HMGB2', 'B2M']",5
+73,negative regulation of translation (GO:0017148),0.020388421818923193,"['BTG2', 'GAPDH']",5
+74,negative regulation of gene expression (GO:0010629),0.02143832214860158,"['BTG2', 'MIF', 'GAPDH']",5
+75,negative regulation of cellular protein metabolic process (GO:0032269),0.021614295058594475,"['BTG2', 'GAPDH']",5
+76,regulation of peptidyl-serine phosphorylation (GO:0033135),0.023142600362671958,"['DDIT4', 'MIF']",5
+77,antigen processing and presentation of exogenous peptide antigen (GO:0002478),0.02483338346318802,"['HLA-A', 'HLA-E']",5
+78,negative regulation of macrophage chemotaxis (GO:0010760),0.02483338346318802,['MIF'],5
+79,negative regulation of RNA polymerase II regulatory region sequence-specific DNA binding (GO:1903026),0.02483338346318802,['TMSB4X'],5
+80,positive regulation of natural killer cell proliferation (GO:0032819),0.02483338346318802,['HLA-E'],5
+81,cellular response to nicotine (GO:0071316),0.02483338346318802,['B2M'],5
+82,regulation of natural killer cell mediated immunity (GO:0002715),0.02483338346318802,['HLA-E'],5
+83,peptidyl-cysteine S-nitrosylation (GO:0018119),0.02483338346318802,['GAPDH'],5
+84,gene expression (GO:0010467),0.02503807036137132,"['RPLP1', 'RPLP0', 'RPS2']",5
+85,regulation of macroautophagy (GO:0016241),0.026872808892631477,"['GAPDH', 'CDK5R1']",5
+86,cellular response to iron ion (GO:0071281),0.028112570587634625,['B2M'],5
+87,positive regulation of receptor binding (GO:1900122),0.028112570587634625,['B2M'],5
+88,regulation of nuclease activity (GO:0032069),0.028112570587634625,['HMGB2'],5
+89,protein homooligomerization (GO:0051260),0.029771819222118048,"['MIF', 'B2M']",5
+90,regulation of tumor necrosis factor production (GO:0032680),0.029771819222118048,"['MIF', 'HLA-E']",5
+91,aldehyde biosynthetic process (GO:0046184),0.029771819222118048,['TPI1'],5
+92,glyceraldehyde-3-phosphate metabolic process (GO:0019682),0.029771819222118048,['TPI1'],5
+93,response to host defenses (GO:0052200),0.029771819222118048,['B2M'],5
+94,positive regulation of natural killer cell cytokine production (GO:0002729),0.029771819222118048,['HLA-E'],5
+95,regulation of natural killer cell cytokine production (GO:0002727),0.029771819222118048,['HLA-E'],5
+96,regulation of natural killer cell proliferation (GO:0032817),0.029771819222118048,['HLA-E'],5
+97,modulation by symbiont of host defense response (GO:0052031),0.029771819222118048,['B2M'],5
+98,plasma membrane bounded cell projection organization (GO:0120036),0.030234138965543153,"['BTG2', 'CDK5R1']",5
+99,cellular protein metabolic process (GO:0044267),0.03204675983613466,"['RPLP1', 'RPLP0', 'RPS2']",5
+100,fructose metabolic process (GO:0006000),0.03204675983613466,['ALDOC'],5
+101,negative regulation of macrophage migration (GO:1905522),0.03204675983613466,['MIF'],5
+102,T cell mediated cytotoxicity (GO:0001913),0.03204675983613466,['HLA-A'],5
+103,cytoplasmic sequestering of NF-kappaB (GO:0007253),0.03204675983613466,['TMSB4X'],5
+104,neuron development (GO:0048666),0.03287450281983056,"['BTG2', 'CDK5R1']",5
+105,regulation of intracellular signal transduction (GO:1902531),0.03287450281983056,"['TMSB4X', 'DDIT4', 'CDK5R1']",5
+106,positive regulation of ATP biosynthetic process (GO:2001171),0.03287450281983056,['TMSB4X'],5
+107,regulation of RNA polymerase II regulatory region sequence-specific DNA binding (GO:1903025),0.03287450281983056,['TMSB4X'],5
+108,"fructose 1,6-bisphosphate metabolic process (GO:0030388)",0.03287450281983056,['ALDOC'],5
+109,positive regulation of ligase activity (GO:0051351),0.03287450281983056,['TMSB4X'],5
+110,positive regulation of megakaryocyte differentiation (GO:0045654),0.03287450281983056,['HMGB2'],5
+111,ketone biosynthetic process (GO:0042181),0.03287450281983056,['TPI1'],5
+112,positive regulation of protein kinase A signaling (GO:0010739),0.03287450281983056,['MIF'],5
+113,DNA topological change (GO:0006265),0.03287450281983056,['HMGB2'],5
+114,brain development (GO:0007420),0.03411581563109369,"['DDIT4', 'CDK5R1']",5
+115,regulation of cytokine production (GO:0001817),0.03411581563109369,"['MIF', 'GAPDH']",5
+116,regulation of receptor binding (GO:1900120),0.03411581563109369,['B2M'],5
+117,negative regulation of receptor binding (GO:1900121),0.03411581563109369,['B2M'],5
+118,sequestering of actin monomers (GO:0042989),0.03411581563109369,['TMSB4X'],5
+119,ionotropic glutamate receptor signaling pathway (GO:0035235),0.03411581563109369,['CDK5R1'],5
+120,neuron projection fasciculation (GO:0106030),0.03411581563109369,['CDK5R1'],5
+121,modulation by symbiont of host process (GO:0044003),0.03411581563109369,['B2M'],5
+122,glycerol metabolic process (GO:0006071),0.03631882472852223,['TPI1'],5
+123,positive regulation of interleukin-13 production (GO:0032736),0.03631882472852223,['HLA-E'],5
+124,negative regulation of natural killer cell mediated immunity (GO:0002716),0.03631882472852223,['HLA-E'],5
+125,V(D)J recombination (GO:0033151),0.03631882472852223,['HMGB2'],5
+126,positive regulation of gene expression (GO:0010628),0.03838323758353659,"['MIF', 'EEF2', 'GAPDH']",5
+127,positive regulation of cellular senescence (GO:2000774),0.03838323758353659,['B2M'],5
+128,axonal fasciculation (GO:0007413),0.03838323758353659,['CDK5R1'],5
+129,negative regulation of leukocyte chemotaxis (GO:0002689),0.03838323758353659,['MIF'],5
+130,neuron projection development (GO:0031175),0.03915273013267853,"['BTG2', 'CDK5R1']",5
+131,neuron differentiation (GO:0030182),0.03915273013267853,"['DDIT4', 'CDK5R1']",5
+132,positive regulation of cell aging (GO:0090343),0.03915273013267853,['B2M'],5
+133,negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902166),0.03915273013267853,['MIF'],5
+134,regulation of cell aging (GO:0090342),0.03915273013267853,['MIF'],5
+135,response to iron ion (GO:0010039),0.03915273013267853,['B2M'],5
+136,positive regulation of nuclear-transcribed mRNA poly(A) tail shortening (GO:0060213),0.03915273013267853,['BTG2'],5
+137,positive regulation of purine nucleotide biosynthetic process (GO:1900373),0.03915273013267853,['TMSB4X'],5
+138,"negative regulation of DNA damage response, signal transduction by p53 class mediator (GO:0043518)",0.040957323070582904,['MIF'],5
+139,regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902165),0.040957323070582904,['MIF'],5
+140,cytoplasmic sequestering of transcription factor (GO:0042994),0.040957323070582904,['TMSB4X'],5
+141,detection of bacterium (GO:0016045),0.040957323070582904,['HLA-A'],5
+142,protein trimerization (GO:0070206),0.04097638541947108,['MIF'],5
+143,positive regulation of endothelial cell chemotaxis (GO:2001028),0.04097638541947108,['TMSB4X'],5
+144,negative regulation of leukocyte mediated cytotoxicity (GO:0001911),0.04097638541947108,['HLA-E'],5
+145,regulation of endothelial cell chemotaxis (GO:2001026),0.04097638541947108,['TMSB4X'],5
+146,positive regulation of natural killer cell activation (GO:0032816),0.04097638541947108,['HLA-E'],5
+147,neurotrophin TRK receptor signaling pathway (GO:0048011),0.04097638541947108,['DDIT4'],5
+148,regulation of nuclear-transcribed mRNA poly(A) tail shortening (GO:0060211),0.04097638541947108,['BTG2'],5
+149,prostanoid biosynthetic process (GO:0046457),0.04097638541947108,['MIF'],5
+150,protein homotrimerization (GO:0070207),0.04097638541947108,['MIF'],5
+151,endoderm development (GO:0007492),0.04097638541947108,['DUSP2'],5
+152,apoptotic DNA fragmentation (GO:0006309),0.041245274704597906,['HMGB2'],5
+153,regulation of ATP biosynthetic process (GO:2001169),0.041245274704597906,['TMSB4X'],5
+154,killing by host of symbiont cells (GO:0051873),0.041245274704597906,['GAPDH'],5
+155,negative regulation of transcription regulatory region DNA binding (GO:2000678),0.041245274704597906,['TMSB4X'],5
+156,regulation of interleukin-13 production (GO:0032656),0.041245274704597906,['HLA-E'],5
+157,neuron cell-cell adhesion (GO:0007158),0.041245274704597906,['CDK5R1'],5
+158,regulation of intrinsic apoptotic signaling pathway in response to DNA damage (GO:1902229),0.041245274704597906,['TPT1'],5
+159,T cell mediated immunity (GO:0002456),0.041245274704597906,['HLA-A'],5
+160,regulation of leukocyte activation (GO:0002694),0.041245274704597906,['MIF'],5
+161,negative regulation of intracellular signal transduction (GO:1902532),0.04248298887722798,"['TMSB4X', 'DDIT4']",5
+162,negative regulation of cell aging (GO:0090344),0.04248298887722798,['MIF'],5
+163,regulation of stem cell proliferation (GO:0072091),0.04248298887722798,['HMGB2'],5
+164,negative regulation of intrinsic apoptotic signaling pathway by p53 class mediator (GO:1902254),0.04248298887722798,['MIF'],5
+165,negative regulation of peptidyl-threonine phosphorylation (GO:0010801),0.04248298887722798,['DDIT4'],5
+166,G protein-coupled acetylcholine receptor signaling pathway (GO:0007213),0.04364603338692771,['CDK5R1'],5
+167,negative regulation of interleukin-8 production (GO:0032717),0.04364603338692771,['TMSB4X'],5
+168,positive regulation of interleukin-4 production (GO:0032753),0.04364603338692771,['HLA-E'],5
+169,negative regulation of signal transduction by p53 class mediator (GO:1901797),0.04364603338692771,['MIF'],5
+170,DNA conformation change (GO:0071103),0.04364603338692771,['HMGB2'],5
+171,negative regulation of nervous system development (GO:0051961),0.045516625669953556,['B2M'],5
+172,prostaglandin biosynthetic process (GO:0001516),0.045516625669953556,['MIF'],5
+173,positive regulation of natural killer cell mediated cytotoxicity (GO:0045954),0.04734222912903439,['HLA-E'],5
+174,regulation of protein kinase A signaling (GO:0010738),0.04734222912903439,['MIF'],5
+175,acetylcholine receptor signaling pathway (GO:0095500),0.04830563126997801,['CDK5R1'],5
+176,negative regulation of peptidyl-serine phosphorylation (GO:0033137),0.04830563126997801,['DDIT4'],5
+177,intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:0042771),0.04830563126997801,['DDIT4'],5
+178,neuron apoptotic process (GO:0051402),0.04830563126997801,['GAPDH'],5
+179,neurotrophin signaling pathway (GO:0038179),0.04830563126997801,['DDIT4'],5
+0,SRP-dependent cotranslational protein targeting to membrane (GO:0006614),4.3935471984622725e-10,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",6
+1,cytoplasmic translation (GO:0002181),4.3935471984622725e-10,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",6
+2,cotranslational protein targeting to membrane (GO:0006613),4.3935471984622725e-10,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",6
+3,protein targeting to ER (GO:0045047),6.34583202581829e-10,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",6
+4,"nuclear-transcribed mRNA catabolic process, nonsense-mediated decay (GO:0000184)",9.839193166051855e-10,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",6
+5,peptide biosynthetic process (GO:0043043),1.0517918021935191e-08,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",6
+6,nuclear-transcribed mRNA catabolic process (GO:0000956),1.318741532911936e-08,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",6
+7,translation (GO:0006412),5.551047375411666e-08,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",6
+8,cellular macromolecule biosynthetic process (GO:0034645),7.042409693182933e-07,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",6
+9,gene expression (GO:0010467),1.5016978776166618e-06,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",6
+10,cellular protein metabolic process (GO:0044267),4.022626743942083e-06,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",6
+11,rRNA metabolic process (GO:0016072),1.7001291900564215e-05,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18']",6
+12,rRNA processing (GO:0006364),2.1732690229560337e-05,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18']",6
+13,ribosome biogenesis (GO:0042254),3.377151533094736e-05,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18']",6
+14,ncRNA processing (GO:0034470),3.950348785979325e-05,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18']",6
+15,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-independent (GO:0002480)",0.0007338378132115158,"['HLA-C', 'B2M']",6
+16,iron ion homeostasis (GO:0055072),0.0007728242648752619,"['MYC', 'B2M', 'FTL']",6
+17,modulation by symbiont of host process (GO:0044003),0.001047087114083246,"['ENO1', 'B2M']",6
+18,regulation of monocyte differentiation (GO:0045655),0.0026357900845272527,"['CD74', 'MYC']",6
+19,negative regulation of peptidyl-serine phosphorylation (GO:0033137),0.004368897531009685,"['DDIT4', 'RACK1']",6
+20,cellular response to interferon-gamma (GO:0071346),0.004818185644263131,"['HLA-C', 'B2M', 'GAPDH']",6
+21,glucose catabolic process to pyruvate (GO:0061718),0.004984060236511861,"['ENO1', 'GAPDH']",6
+22,canonical glycolysis (GO:0061621),0.004984060236511861,"['ENO1', 'GAPDH']",6
+23,glycolytic process through glucose-6-phosphate (GO:0061620),0.005188619962114596,"['ENO1', 'GAPDH']",6
+24,positive regulation of fibroblast proliferation (GO:0048146),0.006226777398171382,"['CD74', 'MYC']",6
+25,glycolytic process (GO:0006096),0.006226777398171382,"['ENO1', 'GAPDH']",6
+26,transition metal ion homeostasis (GO:0055076),0.006226777398171382,"['B2M', 'FTL']",6
+27,"maturation of SSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA) (GO:0000462)",0.0064294244836556455,"['RPS16', 'RPS21']",6
+28,antigen processing and presentation of peptide antigen via MHC class I (GO:0002474),0.007521357209482462,"['HLA-C', 'B2M']",6
+29,ribosomal small subunit biogenesis (GO:0042274),0.010215950650917741,"['RPS15', 'RPS16']",6
+30,gluconeogenesis (GO:0006094),0.010215950650917741,"['ENO1', 'GAPDH']",6
+31,response to growth factor (GO:0070848),0.010215950650917741,"['MYC', 'RACK1']",6
+32,carbohydrate catabolic process (GO:0016052),0.010215950650917741,"['ENO1', 'GAPDH']",6
+33,hexose biosynthetic process (GO:0019319),0.011418541718137274,"['ENO1', 'GAPDH']",6
+34,regulation of fibroblast proliferation (GO:0048145),0.011784631384767038,"['CD74', 'MYC']",6
+35,positive regulation of response to stimulus (GO:0048584),0.011784631384767038,"['MYC', 'B2M']",6
+36,ribosome assembly (GO:0042255),0.013538547017763731,"['RPS15', 'RPL3']",6
+37,neutrophil degranulation (GO:0043312),0.013739489568967261,"['TUBB', 'HLA-C', 'B2M', 'FTL']",6
+38,neutrophil activation involved in immune response (GO:0002283),0.013769309189037316,"['TUBB', 'HLA-C', 'B2M', 'FTL']",6
+39,neutrophil mediated immunity (GO:0002446),0.013769309189037316,"['TUBB', 'HLA-C', 'B2M', 'FTL']",6
+40,pyruvate metabolic process (GO:0006090),0.01476657837944265,"['ENO1', 'GAPDH']",6
+41,ribosomal large subunit biogenesis (GO:0042273),0.015288937237696497,"['RPL7A', 'RPL3']",6
+42,apoptotic process (GO:0006915),0.015288937237696497,"['MYC', 'DDIT4', 'GAPDH']",6
+43,cellular iron ion homeostasis (GO:0006879),0.015288937237696497,"['MYC', 'FTL']",6
+44,ribonucleoprotein complex biogenesis (GO:0022613),0.015988135059902705,"['RPS15', 'RPS16']",6
+45,positive regulation of DNA biosynthetic process (GO:2000573),0.016161076775689173,"['MYC', 'HNRNPA1']",6
+46,glucose metabolic process (GO:0006006),0.016334682381496397,"['ENO1', 'GAPDH']",6
+47,positive regulation of intracellular signal transduction (GO:1902533),0.017344149221669092,"['RPS15', 'CD74', 'RACK1', 'GAPDH']",6
+48,interferon-gamma-mediated signaling pathway (GO:0060333),0.018806793995648108,"['HLA-C', 'B2M']",6
+49,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-dependent (GO:0002479)",0.020937208839365028,"['HLA-C', 'B2M']",6
+50,regulation of cytokine-mediated signaling pathway (GO:0001959),0.020937208839365028,"['CD74', 'RACK1']",6
+51,negative regulation of protein binding (GO:0032091),0.020937208839365028,"['RACK1', 'B2M']",6
+52,regulation of cell division (GO:0051302),0.021649443879940035,"['MYC', 'RACK1']",6
+53,antigen processing and presentation of exogenous peptide antigen via MHC class I (GO:0042590),0.02236245981431273,"['HLA-C', 'B2M']",6
+54,response to interferon-gamma (GO:0034341),0.023076114050285715,"['CD74', 'GAPDH']",6
+55,negative regulation of cellular amide metabolic process (GO:0034249),0.026120332912149914,"['RACK1', 'GAPDH']",6
+56,negative regulation of translation (GO:0017148),0.028052264084107284,"['RACK1', 'GAPDH']",6
+57,regulation of epithelial cell proliferation (GO:0050678),0.029395023745532673,"['MYC', 'B2M']",6
+58,negative regulation of cellular protein metabolic process (GO:0032269),0.02950734271481465,"['RACK1', 'GAPDH']",6
+59,cellular transition metal ion homeostasis (GO:0046916),0.030233991149053372,"['MYC', 'FTL']",6
+60,regulation of peptidyl-serine phosphorylation (GO:0033135),0.030959967094325167,"['DDIT4', 'RACK1']",6
+61,negative regulation of hydrogen peroxide-induced neuron death (GO:1903208),0.031137538426853312,['RACK1'],6
+62,rescue of stalled ribosome (GO:0072344),0.031137538426853312,['RACK1'],6
+63,positive regulation of Golgi to plasma membrane protein transport (GO:0042998),0.031137538426853312,['RACK1'],6
+64,response to sodium arsenite (GO:1903935),0.031137538426853312,['HNRNPA1'],6
+65,positive regulation of mitochondrial depolarization (GO:0051901),0.031137538426853312,['RACK1'],6
+66,intracellular sequestering of iron ion (GO:0006880),0.031137538426853312,['FTL'],6
+67,cellular response to nicotine (GO:0071316),0.031137538426853312,['B2M'],6
+68,cellular response to sodium arsenite (GO:1903936),0.031137538426853312,['HNRNPA1'],6
+69,positive regulation of prostaglandin biosynthetic process (GO:0031394),0.031137538426853312,['CD74'],6
+70,peptidyl-cysteine S-nitrosylation (GO:0018119),0.031137538426853312,['GAPDH'],6
+71,protein-DNA complex subunit organization (GO:0071824),0.03254882295917987,['MYC'],6
+72,negative regulation of cellular response to hypoxia (GO:1900038),0.03254882295917987,['ENO1'],6
+73,regulation of type 2 immune response (GO:0002828),0.03254882295917987,['CD74'],6
+74,positive regulation of kidney development (GO:0090184),0.03254882295917987,['MYC'],6
+75,cellular response to iron ion (GO:0071281),0.03254882295917987,['B2M'],6
+76,cellular response to salt (GO:1902075),0.03254882295917987,['HNRNPA1'],6
+77,positive regulation of plasminogen activation (GO:0010756),0.03254882295917987,['ENO1'],6
+78,positive regulation of receptor binding (GO:1900122),0.03254882295917987,['B2M'],6
+79,regulation of protein binding (GO:0043393),0.03254882295917987,"['RACK1', 'B2M']",6
+80,positive regulation of cysteine-type endopeptidase activity involved in apoptotic process (GO:0043280),0.03254882295917987,"['MYC', 'RACK1']",6
+81,negative regulation of cell growth (GO:0030308),0.03254882295917987,"['RACK1', 'ENO1']",6
+82,negative regulation of growth (GO:0045926),0.03254882295917987,"['RACK1', 'ENO1']",6
+83,positive regulation of chemokine (C-X-C motif) ligand 2 production (GO:2000343),0.03254882295917987,['CD74'],6
+84,antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway (GO:0002484),0.03254882295917987,['HLA-C'],6
+85,"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent (GO:0002486)",0.03254882295917987,['HLA-C'],6
+86,positive regulation of gastrulation (GO:2000543),0.03254882295917987,['RACK1'],6
+87,response to host defenses (GO:0052200),0.03254882295917987,['B2M'],6
+88,ribosomal small subunit export from nucleus (GO:0000056),0.03254882295917987,['RPS15'],6
+89,positive regulation of membrane depolarization (GO:1904181),0.03254882295917987,['RACK1'],6
+90,negative regulation of stress-activated protein kinase signaling cascade (GO:0070303),0.03254882295917987,['MYC'],6
+91,positive regulation of unsaturated fatty acid biosynthetic process (GO:2001280),0.03254882295917987,['CD74'],6
+92,oxygen transport (GO:0015671),0.03254882295917987,['MYC'],6
+93,modulation by symbiont of host defense response (GO:0052031),0.03254882295917987,['B2M'],6
+94,regulation of prostaglandin biosynthetic process (GO:0031392),0.03254882295917987,['CD74'],6
+95,antigen processing and presentation of endogenous peptide antigen via MHC class I (GO:0019885),0.03530393546204878,['B2M'],6
+96,regulation of cyclic-nucleotide phosphodiesterase activity (GO:0051342),0.03530393546204878,['RACK1'],6
+97,positive regulation of muscle contraction (GO:0045933),0.03530393546204878,['ENO1'],6
+98,regulation of Golgi to plasma membrane protein transport (GO:0042996),0.03530393546204878,['RACK1'],6
+99,"endonucleolytic cleavage in ITS1 to separate SSU-rRNA from 5.8S rRNA and LSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA) (GO:0000447)",0.03530393546204878,['RPS21'],6
+100,ribonucleoprotein complex assembly (GO:0022618),0.03530393546204878,"['RPS15', 'RPL3']",6
+101,positive regulation of ATP biosynthetic process (GO:2001171),0.03806158344643068,['ENO1'],6
+102,positive regulation of macrophage cytokine production (GO:0060907),0.03806158344643068,['CD74'],6
+103,positive regulation of transferase activity (GO:0051347),0.03806158344643068,"['CD74', 'MYC']",6
+104,positive regulation of hydrolase activity (GO:0051345),0.03806158344643068,"['RGS1', 'RACK1']",6
+105,regulation of receptor binding (GO:1900120),0.03806158344643068,['B2M'],6
+106,immunoglobulin mediated immune response (GO:0016064),0.03806158344643068,['CD74'],6
+107,regulation of DNA methylation (GO:0044030),0.03806158344643068,['MYC'],6
+108,positive regulation of mesenchymal cell proliferation (GO:0002053),0.03806158344643068,['MYC'],6
+109,rRNA 3'-end processing (GO:0031125),0.03806158344643068,['RPS21'],6
+110,regulation of endoplasmic reticulum unfolded protein response (GO:1900101),0.03806158344643068,['RACK1'],6
+111,positive regulation of monocyte differentiation (GO:0045657),0.03806158344643068,['CD74'],6
+112,negative regulation of receptor binding (GO:1900121),0.03806158344643068,['B2M'],6
+113,positive regulation of viral entry into host cell (GO:0046598),0.03806158344643068,['CD74'],6
+114,positive regulation by symbiont of entry into host (GO:0075294),0.03806158344643068,['CD74'],6
+115,negative regulation of protein phosphorylation (GO:0001933),0.03806158344643068,"['DDIT4', 'RACK1']",6
+116,positive regulation of ceramide biosynthetic process (GO:2000304),0.03975300334725574,['RACK1'],6
+117,B cell mediated immunity (GO:0019724),0.03975300334725574,['CD74'],6
+118,negative regulation of oxidative stress-induced neuron death (GO:1903204),0.03975300334725574,['RACK1'],6
+119,positive regulation of sphingolipid biosynthetic process (GO:0090154),0.03975300334725574,['RACK1'],6
+120,regulation of mesenchymal cell proliferation (GO:0010464),0.03975300334725574,['MYC'],6
+121,regulation of mitochondrial depolarization (GO:0051900),0.03975300334725574,['RACK1'],6
+122,positive regulation of gene expression (GO:0010628),0.041639804325733186,"['CD74', 'MYC', 'GAPDH']",6
+123,negative regulation of cell division (GO:0051782),0.041639804325733186,['MYC'],6
+124,positive regulation of cellular senescence (GO:2000774),0.041639804325733186,['B2M'],6
+125,gas transport (GO:0015669),0.041639804325733186,['MYC'],6
+126,regulation of plasminogen activation (GO:0010755),0.041639804325733186,['ENO1'],6
+127,positive regulation of I-kappaB kinase/NF-kappaB signaling (GO:0043123),0.04179727943162032,"['CD74', 'GAPDH']",6
+128,positive regulation of cell aging (GO:0090343),0.04179727943162032,['B2M'],6
+129,negative regulation of endoplasmic reticulum unfolded protein response (GO:1900102),0.04179727943162032,['RACK1'],6
+130,negative regulation of hydrogen peroxide-induced cell death (GO:1903206),0.04179727943162032,['RACK1'],6
+131,negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902166),0.04179727943162032,['CD74'],6
+132,response to iron ion (GO:0010039),0.04179727943162032,['B2M'],6
+133,regulation of chemokine (C-X-C motif) ligand 2 production (GO:2000341),0.04179727943162032,['CD74'],6
+134,ribosomal subunit export from nucleus (GO:0000054),0.04179727943162032,['RPS15'],6
+135,positive regulation of purine nucleotide biosynthetic process (GO:1900373),0.04179727943162032,['ENO1'],6
+136,"endonucleolytic cleavage of tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA) (GO:0000479)",0.04179727943162032,['RPS21'],6
+137,regulation of translation (GO:0006417),0.042217692945501865,"['RACK1', 'GAPDH']",6
+138,regulation of immune response (GO:0050776),0.042217692945501865,"['HLA-C', 'B2M']",6
+139,antigen processing and presentation of endogenous peptide antigen (GO:0002483),0.042217692945501865,['B2M'],6
+140,"negative regulation of DNA damage response, signal transduction by p53 class mediator (GO:0043518)",0.042217692945501865,['CD74'],6
+141,negative regulation of secretion (GO:0051048),0.042217692945501865,['CD74'],6
+142,regulation of gastrulation (GO:0010470),0.042217692945501865,['RACK1'],6
+143,regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902165),0.042217692945501865,['CD74'],6
+144,regulation of macrophage cytokine production (GO:0010935),0.042217692945501865,['CD74'],6
+145,positive regulation of type 2 immune response (GO:0002830),0.042217692945501865,['CD74'],6
+146,cellular response to arsenic-containing substance (GO:0071243),0.04400615452321379,['HNRNPA1'],6
+147,positive regulation of response to cytokine stimulus (GO:0060760),0.04400615452321379,['CD74'],6
+148,neurotrophin TRK receptor signaling pathway (GO:0048011),0.04400615452321379,['DDIT4'],6
+149,prostanoid biosynthetic process (GO:0046457),0.04400615452321379,['CD74'],6
+150,regulation of GTPase activity (GO:0043087),0.0442778045003752,"['RGS1', 'RACK1']",6
+151,regulation of ATP biosynthetic process (GO:2001169),0.04482578136342359,['ENO1'],6
+152,regulation of ceramide biosynthetic process (GO:2000303),0.04482578136342359,['RACK1'],6
+153,regulation of establishment of cell polarity (GO:2000114),0.04482578136342359,['RACK1'],6
+154,positive regulation of myeloid leukocyte cytokine production involved in immune response (GO:0061081),0.04482578136342359,['CD74'],6
+155,killing by host of symbiont cells (GO:0051873),0.04482578136342359,['GAPDH'],6
+156,regulation of leukocyte activation (GO:0002694),0.04482578136342359,['CD74'],6
+157,negative regulation of cellular macromolecule biosynthetic process (GO:2000113),0.04585249708007149,"['RACK1', 'ENO1', 'GAPDH']",6
+158,negative regulation of intracellular signal transduction (GO:1902532),0.04585249708007149,"['DDIT4', 'RACK1']",6
+159,negative regulation of intrinsic apoptotic signaling pathway by p53 class mediator (GO:1902254),0.04585249708007149,['CD74'],6
+160,negative regulation of peptidyl-threonine phosphorylation (GO:0010801),0.04585249708007149,['DDIT4'],6
+161,ribosomal small subunit assembly (GO:0000028),0.04585249708007149,['RPS15'],6
+162,negative regulation of phagocytosis (GO:0050765),0.04585249708007149,['RACK1'],6
+163,negative regulation of fibroblast proliferation (GO:0048147),0.04763948120865268,['MYC'],6
+164,regulation of establishment or maintenance of cell polarity (GO:0032878),0.04763948120865268,['RACK1'],6
+165,negative regulation of signal transduction by p53 class mediator (GO:1901797),0.04763948120865268,['CD74'],6
+166,negative regulation of cellular process (GO:0048523),0.04763948120865268,"['MYC', 'RACK1', 'ENO1']",6
+167,mitotic cell cycle phase transition (GO:0044772),0.04768761004401328,"['TUBB', 'MYC']",6
+168,regulation of stem cell population maintenance (GO:2000036),0.04768761004401328,['MYC'],6
+169,regulation of T cell cytokine production (GO:0002724),0.04768761004401328,['B2M'],6
+170,branching involved in ureteric bud morphogenesis (GO:0001658),0.04768761004401328,['MYC'],6
+171,negative regulation of nervous system development (GO:0051961),0.04768761004401328,['B2M'],6
+172,positive regulation of neutrophil chemotaxis (GO:0090023),0.04768761004401328,['CD74'],6
+173,ureteric bud morphogenesis (GO:0060675),0.04768761004401328,['MYC'],6
+174,prostaglandin biosynthetic process (GO:0001516),0.04768761004401328,['CD74'],6
+175,positive regulation of GTPase activity (GO:0043547),0.0477195536877001,"['RGS1', 'RACK1']",6
+176,positive regulation of protein modification process (GO:0031401),0.0477195536877001,"['CD74', 'RACK1']",6
+177,regulation of cell growth (GO:0001558),0.0477195536877001,"['RACK1', 'ENO1']",6
+178,protein-DNA complex disassembly (GO:0032986),0.0477195536877001,['MYC'],6
+179,positive regulation of embryonic development (GO:0040019),0.0477195536877001,['RACK1'],6
+180,negative regulation of telomere maintenance via telomerase (GO:0032211),0.0477195536877001,['HNRNPA1'],6
+181,positive regulation of protein processing (GO:0010954),0.0477195536877001,['ENO1'],6
+182,natural killer cell mediated immunity (GO:0002228),0.0477195536877001,['TUBB'],6
+183,energy reserve metabolic process (GO:0006112),0.0477195536877001,['MYC'],6
+184,regulation of I-kappaB kinase/NF-kappaB signaling (GO:0043122),0.048756880046936096,"['CD74', 'GAPDH']",6
+185,intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:0042771),0.048756880046936096,['DDIT4'],6
+186,neuron apoptotic process (GO:0051402),0.048756880046936096,['GAPDH'],6
+187,neurotrophin signaling pathway (GO:0038179),0.048756880046936096,['DDIT4'],6
+188,positive regulation of T cell cytokine production (GO:0002726),0.048756880046936096,['B2M'],6
+189,regulation of vacuole organization (GO:0044088),0.04923106874495602,['ENO1'],6
+190,positive regulation of granulocyte chemotaxis (GO:0071624),0.04923106874495602,['CD74'],6
+191,regulation of chromosome organization (GO:0033044),0.04923106874495602,['MYC'],6
+192,positive regulation of neutrophil migration (GO:1902624),0.04923106874495602,['CD74'],6
+193,"maturation of 5.8S rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA) (GO:0000466)",0.04923106874495602,['RPS21'],6
+194,positive regulation of signal transduction by p53 class mediator (GO:1901798),0.04923106874495602,['RPS15'],6
+195,natural killer cell mediated cytotoxicity (GO:0042267),0.04923106874495602,['TUBB'],6
+0,SRP-dependent cotranslational protein targeting to membrane (GO:0006614),4.3935471984622725e-10,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",7
+1,cytoplasmic translation (GO:0002181),4.3935471984622725e-10,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",7
+2,cotranslational protein targeting to membrane (GO:0006613),4.3935471984622725e-10,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",7
+3,protein targeting to ER (GO:0045047),6.34583202581829e-10,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",7
+4,"nuclear-transcribed mRNA catabolic process, nonsense-mediated decay (GO:0000184)",9.839193166051855e-10,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",7
+5,peptide biosynthetic process (GO:0043043),1.0517918021935191e-08,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",7
+6,nuclear-transcribed mRNA catabolic process (GO:0000956),1.318741532911936e-08,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",7
+7,translation (GO:0006412),5.551047375411666e-08,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",7
+8,cellular macromolecule biosynthetic process (GO:0034645),7.042409693182933e-07,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",7
+9,gene expression (GO:0010467),1.5016978776166618e-06,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",7
+10,cellular protein metabolic process (GO:0044267),4.022626743942083e-06,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18', 'RPS11', 'RPS21']",7
+11,rRNA metabolic process (GO:0016072),1.7001291900564215e-05,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18']",7
+12,rRNA processing (GO:0006364),2.1732690229560337e-05,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18']",7
+13,ribosome biogenesis (GO:0042254),3.377151533094736e-05,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18']",7
+14,ncRNA processing (GO:0034470),3.950348785979325e-05,"['RPS15', 'RPL7A', 'RPL3', 'RPS16', 'RPL18']",7
+15,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-independent (GO:0002480)",0.0007338378132115158,"['HLA-C', 'B2M']",7
+16,iron ion homeostasis (GO:0055072),0.0007728242648752619,"['MYC', 'B2M', 'FTL']",7
+17,modulation by symbiont of host process (GO:0044003),0.001047087114083246,"['ENO1', 'B2M']",7
+18,regulation of monocyte differentiation (GO:0045655),0.0026357900845272527,"['CD74', 'MYC']",7
+19,negative regulation of peptidyl-serine phosphorylation (GO:0033137),0.004368897531009685,"['DDIT4', 'RACK1']",7
+20,cellular response to interferon-gamma (GO:0071346),0.004818185644263131,"['HLA-C', 'B2M', 'GAPDH']",7
+21,glucose catabolic process to pyruvate (GO:0061718),0.004984060236511861,"['ENO1', 'GAPDH']",7
+22,canonical glycolysis (GO:0061621),0.004984060236511861,"['ENO1', 'GAPDH']",7
+23,glycolytic process through glucose-6-phosphate (GO:0061620),0.005188619962114596,"['ENO1', 'GAPDH']",7
+24,positive regulation of fibroblast proliferation (GO:0048146),0.006226777398171382,"['CD74', 'MYC']",7
+25,glycolytic process (GO:0006096),0.006226777398171382,"['ENO1', 'GAPDH']",7
+26,transition metal ion homeostasis (GO:0055076),0.006226777398171382,"['B2M', 'FTL']",7
+27,"maturation of SSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA) (GO:0000462)",0.0064294244836556455,"['RPS16', 'RPS21']",7
+28,antigen processing and presentation of peptide antigen via MHC class I (GO:0002474),0.007521357209482462,"['HLA-C', 'B2M']",7
+29,ribosomal small subunit biogenesis (GO:0042274),0.010215950650917741,"['RPS15', 'RPS16']",7
+30,gluconeogenesis (GO:0006094),0.010215950650917741,"['ENO1', 'GAPDH']",7
+31,response to growth factor (GO:0070848),0.010215950650917741,"['MYC', 'RACK1']",7
+32,carbohydrate catabolic process (GO:0016052),0.010215950650917741,"['ENO1', 'GAPDH']",7
+33,hexose biosynthetic process (GO:0019319),0.011418541718137274,"['ENO1', 'GAPDH']",7
+34,regulation of fibroblast proliferation (GO:0048145),0.011784631384767038,"['CD74', 'MYC']",7
+35,positive regulation of response to stimulus (GO:0048584),0.011784631384767038,"['MYC', 'B2M']",7
+36,ribosome assembly (GO:0042255),0.013538547017763731,"['RPS15', 'RPL3']",7
+37,neutrophil degranulation (GO:0043312),0.013739489568967261,"['TUBB', 'HLA-C', 'B2M', 'FTL']",7
+38,neutrophil activation involved in immune response (GO:0002283),0.013769309189037316,"['TUBB', 'HLA-C', 'B2M', 'FTL']",7
+39,neutrophil mediated immunity (GO:0002446),0.013769309189037316,"['TUBB', 'HLA-C', 'B2M', 'FTL']",7
+40,pyruvate metabolic process (GO:0006090),0.01476657837944265,"['ENO1', 'GAPDH']",7
+41,ribosomal large subunit biogenesis (GO:0042273),0.015288937237696497,"['RPL7A', 'RPL3']",7
+42,apoptotic process (GO:0006915),0.015288937237696497,"['MYC', 'DDIT4', 'GAPDH']",7
+43,cellular iron ion homeostasis (GO:0006879),0.015288937237696497,"['MYC', 'FTL']",7
+44,ribonucleoprotein complex biogenesis (GO:0022613),0.015988135059902705,"['RPS15', 'RPS16']",7
+45,positive regulation of DNA biosynthetic process (GO:2000573),0.016161076775689173,"['MYC', 'HNRNPA1']",7
+46,glucose metabolic process (GO:0006006),0.016334682381496397,"['ENO1', 'GAPDH']",7
+47,positive regulation of intracellular signal transduction (GO:1902533),0.017344149221669092,"['RPS15', 'CD74', 'RACK1', 'GAPDH']",7
+48,interferon-gamma-mediated signaling pathway (GO:0060333),0.018806793995648108,"['HLA-C', 'B2M']",7
+49,"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-dependent (GO:0002479)",0.020937208839365028,"['HLA-C', 'B2M']",7
+50,regulation of cytokine-mediated signaling pathway (GO:0001959),0.020937208839365028,"['CD74', 'RACK1']",7
+51,negative regulation of protein binding (GO:0032091),0.020937208839365028,"['RACK1', 'B2M']",7
+52,regulation of cell division (GO:0051302),0.021649443879940035,"['MYC', 'RACK1']",7
+53,antigen processing and presentation of exogenous peptide antigen via MHC class I (GO:0042590),0.02236245981431273,"['HLA-C', 'B2M']",7
+54,response to interferon-gamma (GO:0034341),0.023076114050285715,"['CD74', 'GAPDH']",7
+55,negative regulation of cellular amide metabolic process (GO:0034249),0.026120332912149914,"['RACK1', 'GAPDH']",7
+56,negative regulation of translation (GO:0017148),0.028052264084107284,"['RACK1', 'GAPDH']",7
+57,regulation of epithelial cell proliferation (GO:0050678),0.029395023745532673,"['MYC', 'B2M']",7
+58,negative regulation of cellular protein metabolic process (GO:0032269),0.02950734271481465,"['RACK1', 'GAPDH']",7
+59,cellular transition metal ion homeostasis (GO:0046916),0.030233991149053372,"['MYC', 'FTL']",7
+60,regulation of peptidyl-serine phosphorylation (GO:0033135),0.030959967094325167,"['DDIT4', 'RACK1']",7
+61,negative regulation of hydrogen peroxide-induced neuron death (GO:1903208),0.031137538426853312,['RACK1'],7
+62,rescue of stalled ribosome (GO:0072344),0.031137538426853312,['RACK1'],7
+63,positive regulation of Golgi to plasma membrane protein transport (GO:0042998),0.031137538426853312,['RACK1'],7
+64,response to sodium arsenite (GO:1903935),0.031137538426853312,['HNRNPA1'],7
+65,positive regulation of mitochondrial depolarization (GO:0051901),0.031137538426853312,['RACK1'],7
+66,intracellular sequestering of iron ion (GO:0006880),0.031137538426853312,['FTL'],7
+67,cellular response to nicotine (GO:0071316),0.031137538426853312,['B2M'],7
+68,cellular response to sodium arsenite (GO:1903936),0.031137538426853312,['HNRNPA1'],7
+69,positive regulation of prostaglandin biosynthetic process (GO:0031394),0.031137538426853312,['CD74'],7
+70,peptidyl-cysteine S-nitrosylation (GO:0018119),0.031137538426853312,['GAPDH'],7
+71,protein-DNA complex subunit organization (GO:0071824),0.03254882295917987,['MYC'],7
+72,negative regulation of cellular response to hypoxia (GO:1900038),0.03254882295917987,['ENO1'],7
+73,regulation of type 2 immune response (GO:0002828),0.03254882295917987,['CD74'],7
+74,positive regulation of kidney development (GO:0090184),0.03254882295917987,['MYC'],7
+75,cellular response to iron ion (GO:0071281),0.03254882295917987,['B2M'],7
+76,cellular response to salt (GO:1902075),0.03254882295917987,['HNRNPA1'],7
+77,positive regulation of plasminogen activation (GO:0010756),0.03254882295917987,['ENO1'],7
+78,positive regulation of receptor binding (GO:1900122),0.03254882295917987,['B2M'],7
+79,regulation of protein binding (GO:0043393),0.03254882295917987,"['RACK1', 'B2M']",7
+80,positive regulation of cysteine-type endopeptidase activity involved in apoptotic process (GO:0043280),0.03254882295917987,"['MYC', 'RACK1']",7
+81,negative regulation of cell growth (GO:0030308),0.03254882295917987,"['RACK1', 'ENO1']",7
+82,negative regulation of growth (GO:0045926),0.03254882295917987,"['RACK1', 'ENO1']",7
+83,positive regulation of chemokine (C-X-C motif) ligand 2 production (GO:2000343),0.03254882295917987,['CD74'],7
+84,antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway (GO:0002484),0.03254882295917987,['HLA-C'],7
+85,"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent (GO:0002486)",0.03254882295917987,['HLA-C'],7
+86,positive regulation of gastrulation (GO:2000543),0.03254882295917987,['RACK1'],7
+87,response to host defenses (GO:0052200),0.03254882295917987,['B2M'],7
+88,ribosomal small subunit export from nucleus (GO:0000056),0.03254882295917987,['RPS15'],7
+89,positive regulation of membrane depolarization (GO:1904181),0.03254882295917987,['RACK1'],7
+90,negative regulation of stress-activated protein kinase signaling cascade (GO:0070303),0.03254882295917987,['MYC'],7
+91,positive regulation of unsaturated fatty acid biosynthetic process (GO:2001280),0.03254882295917987,['CD74'],7
+92,oxygen transport (GO:0015671),0.03254882295917987,['MYC'],7
+93,modulation by symbiont of host defense response (GO:0052031),0.03254882295917987,['B2M'],7
+94,regulation of prostaglandin biosynthetic process (GO:0031392),0.03254882295917987,['CD74'],7
+95,antigen processing and presentation of endogenous peptide antigen via MHC class I (GO:0019885),0.03530393546204878,['B2M'],7
+96,regulation of cyclic-nucleotide phosphodiesterase activity (GO:0051342),0.03530393546204878,['RACK1'],7
+97,positive regulation of muscle contraction (GO:0045933),0.03530393546204878,['ENO1'],7
+98,regulation of Golgi to plasma membrane protein transport (GO:0042996),0.03530393546204878,['RACK1'],7
+99,"endonucleolytic cleavage in ITS1 to separate SSU-rRNA from 5.8S rRNA and LSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA) (GO:0000447)",0.03530393546204878,['RPS21'],7
+100,ribonucleoprotein complex assembly (GO:0022618),0.03530393546204878,"['RPS15', 'RPL3']",7
+101,positive regulation of ATP biosynthetic process (GO:2001171),0.03806158344643068,['ENO1'],7
+102,positive regulation of macrophage cytokine production (GO:0060907),0.03806158344643068,['CD74'],7
+103,positive regulation of transferase activity (GO:0051347),0.03806158344643068,"['CD74', 'MYC']",7
+104,positive regulation of hydrolase activity (GO:0051345),0.03806158344643068,"['RGS1', 'RACK1']",7
+105,regulation of receptor binding (GO:1900120),0.03806158344643068,['B2M'],7
+106,immunoglobulin mediated immune response (GO:0016064),0.03806158344643068,['CD74'],7
+107,regulation of DNA methylation (GO:0044030),0.03806158344643068,['MYC'],7
+108,positive regulation of mesenchymal cell proliferation (GO:0002053),0.03806158344643068,['MYC'],7
+109,rRNA 3'-end processing (GO:0031125),0.03806158344643068,['RPS21'],7
+110,regulation of endoplasmic reticulum unfolded protein response (GO:1900101),0.03806158344643068,['RACK1'],7
+111,positive regulation of monocyte differentiation (GO:0045657),0.03806158344643068,['CD74'],7
+112,negative regulation of receptor binding (GO:1900121),0.03806158344643068,['B2M'],7
+113,positive regulation of viral entry into host cell (GO:0046598),0.03806158344643068,['CD74'],7
+114,positive regulation by symbiont of entry into host (GO:0075294),0.03806158344643068,['CD74'],7
+115,negative regulation of protein phosphorylation (GO:0001933),0.03806158344643068,"['DDIT4', 'RACK1']",7
+116,positive regulation of ceramide biosynthetic process (GO:2000304),0.03975300334725574,['RACK1'],7
+117,B cell mediated immunity (GO:0019724),0.03975300334725574,['CD74'],7
+118,negative regulation of oxidative stress-induced neuron death (GO:1903204),0.03975300334725574,['RACK1'],7
+119,positive regulation of sphingolipid biosynthetic process (GO:0090154),0.03975300334725574,['RACK1'],7
+120,regulation of mesenchymal cell proliferation (GO:0010464),0.03975300334725574,['MYC'],7
+121,regulation of mitochondrial depolarization (GO:0051900),0.03975300334725574,['RACK1'],7
+122,positive regulation of gene expression (GO:0010628),0.041639804325733186,"['CD74', 'MYC', 'GAPDH']",7
+123,negative regulation of cell division (GO:0051782),0.041639804325733186,['MYC'],7
+124,positive regulation of cellular senescence (GO:2000774),0.041639804325733186,['B2M'],7
+125,gas transport (GO:0015669),0.041639804325733186,['MYC'],7
+126,regulation of plasminogen activation (GO:0010755),0.041639804325733186,['ENO1'],7
+127,positive regulation of I-kappaB kinase/NF-kappaB signaling (GO:0043123),0.04179727943162032,"['CD74', 'GAPDH']",7
+128,positive regulation of cell aging (GO:0090343),0.04179727943162032,['B2M'],7
+129,negative regulation of endoplasmic reticulum unfolded protein response (GO:1900102),0.04179727943162032,['RACK1'],7
+130,negative regulation of hydrogen peroxide-induced cell death (GO:1903206),0.04179727943162032,['RACK1'],7
+131,negative regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902166),0.04179727943162032,['CD74'],7
+132,response to iron ion (GO:0010039),0.04179727943162032,['B2M'],7
+133,regulation of chemokine (C-X-C motif) ligand 2 production (GO:2000341),0.04179727943162032,['CD74'],7
+134,ribosomal subunit export from nucleus (GO:0000054),0.04179727943162032,['RPS15'],7
+135,positive regulation of purine nucleotide biosynthetic process (GO:1900373),0.04179727943162032,['ENO1'],7
+136,"endonucleolytic cleavage of tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA) (GO:0000479)",0.04179727943162032,['RPS21'],7
+137,regulation of translation (GO:0006417),0.042217692945501865,"['RACK1', 'GAPDH']",7
+138,regulation of immune response (GO:0050776),0.042217692945501865,"['HLA-C', 'B2M']",7
+139,antigen processing and presentation of endogenous peptide antigen (GO:0002483),0.042217692945501865,['B2M'],7
+140,"negative regulation of DNA damage response, signal transduction by p53 class mediator (GO:0043518)",0.042217692945501865,['CD74'],7
+141,negative regulation of secretion (GO:0051048),0.042217692945501865,['CD74'],7
+142,regulation of gastrulation (GO:0010470),0.042217692945501865,['RACK1'],7
+143,regulation of intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:1902165),0.042217692945501865,['CD74'],7
+144,regulation of macrophage cytokine production (GO:0010935),0.042217692945501865,['CD74'],7
+145,positive regulation of type 2 immune response (GO:0002830),0.042217692945501865,['CD74'],7
+146,cellular response to arsenic-containing substance (GO:0071243),0.04400615452321379,['HNRNPA1'],7
+147,positive regulation of response to cytokine stimulus (GO:0060760),0.04400615452321379,['CD74'],7
+148,neurotrophin TRK receptor signaling pathway (GO:0048011),0.04400615452321379,['DDIT4'],7
+149,prostanoid biosynthetic process (GO:0046457),0.04400615452321379,['CD74'],7
+150,regulation of GTPase activity (GO:0043087),0.0442778045003752,"['RGS1', 'RACK1']",7
+151,regulation of ATP biosynthetic process (GO:2001169),0.04482578136342359,['ENO1'],7
+152,regulation of ceramide biosynthetic process (GO:2000303),0.04482578136342359,['RACK1'],7
+153,regulation of establishment of cell polarity (GO:2000114),0.04482578136342359,['RACK1'],7
+154,positive regulation of myeloid leukocyte cytokine production involved in immune response (GO:0061081),0.04482578136342359,['CD74'],7
+155,killing by host of symbiont cells (GO:0051873),0.04482578136342359,['GAPDH'],7
+156,regulation of leukocyte activation (GO:0002694),0.04482578136342359,['CD74'],7
+157,negative regulation of cellular macromolecule biosynthetic process (GO:2000113),0.04585249708007149,"['RACK1', 'ENO1', 'GAPDH']",7
+158,negative regulation of intracellular signal transduction (GO:1902532),0.04585249708007149,"['DDIT4', 'RACK1']",7
+159,negative regulation of intrinsic apoptotic signaling pathway by p53 class mediator (GO:1902254),0.04585249708007149,['CD74'],7
+160,negative regulation of peptidyl-threonine phosphorylation (GO:0010801),0.04585249708007149,['DDIT4'],7
+161,ribosomal small subunit assembly (GO:0000028),0.04585249708007149,['RPS15'],7
+162,negative regulation of phagocytosis (GO:0050765),0.04585249708007149,['RACK1'],7
+163,negative regulation of fibroblast proliferation (GO:0048147),0.04763948120865268,['MYC'],7
+164,regulation of establishment or maintenance of cell polarity (GO:0032878),0.04763948120865268,['RACK1'],7
+165,negative regulation of signal transduction by p53 class mediator (GO:1901797),0.04763948120865268,['CD74'],7
+166,negative regulation of cellular process (GO:0048523),0.04763948120865268,"['MYC', 'RACK1', 'ENO1']",7
+167,mitotic cell cycle phase transition (GO:0044772),0.04768761004401328,"['TUBB', 'MYC']",7
+168,regulation of stem cell population maintenance (GO:2000036),0.04768761004401328,['MYC'],7
+169,regulation of T cell cytokine production (GO:0002724),0.04768761004401328,['B2M'],7
+170,branching involved in ureteric bud morphogenesis (GO:0001658),0.04768761004401328,['MYC'],7
+171,negative regulation of nervous system development (GO:0051961),0.04768761004401328,['B2M'],7
+172,positive regulation of neutrophil chemotaxis (GO:0090023),0.04768761004401328,['CD74'],7
+173,ureteric bud morphogenesis (GO:0060675),0.04768761004401328,['MYC'],7
+174,prostaglandin biosynthetic process (GO:0001516),0.04768761004401328,['CD74'],7
+175,positive regulation of GTPase activity (GO:0043547),0.0477195536877001,"['RGS1', 'RACK1']",7
+176,positive regulation of protein modification process (GO:0031401),0.0477195536877001,"['CD74', 'RACK1']",7
+177,regulation of cell growth (GO:0001558),0.0477195536877001,"['RACK1', 'ENO1']",7
+178,protein-DNA complex disassembly (GO:0032986),0.0477195536877001,['MYC'],7
+179,positive regulation of embryonic development (GO:0040019),0.0477195536877001,['RACK1'],7
+180,negative regulation of telomere maintenance via telomerase (GO:0032211),0.0477195536877001,['HNRNPA1'],7
+181,positive regulation of protein processing (GO:0010954),0.0477195536877001,['ENO1'],7
+182,natural killer cell mediated immunity (GO:0002228),0.0477195536877001,['TUBB'],7
+183,energy reserve metabolic process (GO:0006112),0.0477195536877001,['MYC'],7
+184,regulation of I-kappaB kinase/NF-kappaB signaling (GO:0043122),0.048756880046936096,"['CD74', 'GAPDH']",7
+185,intrinsic apoptotic signaling pathway in response to DNA damage by p53 class mediator (GO:0042771),0.048756880046936096,['DDIT4'],7
+186,neuron apoptotic process (GO:0051402),0.048756880046936096,['GAPDH'],7
+187,neurotrophin signaling pathway (GO:0038179),0.048756880046936096,['DDIT4'],7
+188,positive regulation of T cell cytokine production (GO:0002726),0.048756880046936096,['B2M'],7
+189,regulation of vacuole organization (GO:0044088),0.04923106874495602,['ENO1'],7
+190,positive regulation of granulocyte chemotaxis (GO:0071624),0.04923106874495602,['CD74'],7
+191,regulation of chromosome organization (GO:0033044),0.04923106874495602,['MYC'],7
+192,positive regulation of neutrophil migration (GO:1902624),0.04923106874495602,['CD74'],7
+193,"maturation of 5.8S rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA) (GO:0000466)",0.04923106874495602,['RPS21'],7
+194,positive regulation of signal transduction by p53 class mediator (GO:1901798),0.04923106874495602,['RPS15'],7
+195,natural killer cell mediated cytotoxicity (GO:0042267),0.04923106874495602,['TUBB'],7
