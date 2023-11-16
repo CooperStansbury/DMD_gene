@@ -181,6 +181,26 @@ def data2DMD(df):
     return dmd_data
 
 
+def data2DMD2017(df):
+    """A function to make DMD suitable data from the 2017 data"""
+    a = [x for x in df.columns if "R1" in x]
+    b = [x for x in df.columns if "R2" in x]
+
+    dfa = getFCFrame(df, a)
+    dfb = getFCFrame(df, b)
+
+    scaler = StandardScaler()
+
+    dfa = scaler.fit_transform(dfa)
+    dfb = scaler.fit_transform(dfb)
+
+    dmd_data = np.asarray([dfa, dfb])
+    dmd_data = np.swapaxes(dmd_data, 0, 2)
+    dmd_data = np.swapaxes(dmd_data, 0, 1)
+
+    return dmd_data
+
+
 def getMuData(df):
     """A function to get the mean expression of each replicate at
     each time point """
