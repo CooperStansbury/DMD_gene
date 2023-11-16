@@ -31,8 +31,6 @@ end
 S = [];                     % selected sensors
 R = 1:n;                    % remaining sensors
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 At = containers.Map();
 At(string(0)) = eye(size(A));
 for i=1:gramT
