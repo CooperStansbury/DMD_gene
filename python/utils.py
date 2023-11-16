@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib 
 import matplotlib.pyplot as plt
 import scipy
-import scanpy as sc
+# import scanpy as sc
 from scipy import stats
 from Bio import SeqIO
 from Bio.KEGG import REST

@@ -3,6 +3,9 @@
 data/Human.GRCh38.p13.annot.tsv
 data/hwgGeneIdxTbl.csv
 data/C1.tracks.full.csv
+*.out
+notebooks/submodularOpt/cc_filtered_A.mat
+notebooks/cc_filtered_A.mat
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
