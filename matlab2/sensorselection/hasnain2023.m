@@ -1,4 +1,4 @@
-function [s, GV] = hasnain2023(D, replicates)
+function [s, GV] = hasnain2023(D, varargin)
 %HASNAIN2023 Sensor selection from Learning perturbation-inducible cell states
 % from observability analysis of transcriptome dynamics
 %
@@ -6,35 +6,33 @@ function [s, GV] = hasnain2023(D, replicates)
 %       jpic@umich.edu
 % Date: September 13, 2023
 
-[~,t] = size(D);
+% Set default values
+gramT = size(D, 2);
+dmdThresh = 0.9;
+replicates = 1;
+
+% Parse varargin
+for i = 1:2:length(varargin)
+    if strcmpi(varargin{i}, 'gramT')
+        gramT = varargin{i + 1};
+    elseif strcmpi(varargin{i}, 'dmdThresh')
+        dmdThresh = varargin{i + 1};
+    elseif strcmpi(varargin{i}, 'reps')
+        replicates = varargin{i + 1};
+    else
+        error('Unrecognized parameter name: %s', varargin{i});
+    end
+end
 
 %% Dynamic Mode Decomposition
-if nargin == 2
-    out = shiftedDMD(D,replicates,[],0.9);
-else
-    out = DMD(D, [], 0.9);
-end
+out = shiftedDMD(D,replicates,[],dmdThresh);
 Atilda = out.DMD.UX' * out.Xp * out.DMD.VX * inv(out.DMD.Sig);
 
-%{
-[e,v] = eig(Atilda)
-figure;
-p = nsidedpoly(1000, 'Center', [0 0], 'Radius', 1);
-plot(p, 'FaceColor', 'r'); hold on;
-scatter(real(diag(v)), imag(diag(v)))
-axis equal
-%}
-% plot(diag(v))
-% norm(diag(v) - real(diag(v)))
-% A = exactDMD(D);
-% [e,v] = eig(A);
-
 %% Reduced Grammarian
-
 Ai = Atilda;
 G = out.DMD.UX' * D(:,1) * D(:,1)' * out.DMD.UX;
-for i=1:t
-    G = G + Ai * out.DMD.UX' * D(:,i) * D(:,i)'*out.DMD.UX*Ai';
+for i=1:gramT
+    G = G + Ai * out.DMD.UX' * D(:,1) * D(:,1)'*out.DMD.UX*Ai';
     Ai = Ai * Atilda;
 end
 
@@ -46,13 +44,3 @@ GV = out.DMD.UX * V;    % Approximate eigenvectors of full Grammarian
 
 end
 
-%{
-
-    Gproj = out.DMD.UX * G * out.DMD.UX';
-    
-    [V,D] = eigs(Gproj,1)
-    [m, mi] = max(V)
-    
-    issymmetric(Gproj)
-
-%}

@@ -101,7 +101,8 @@ for g=1:3
         tival = mod(i, sfreq / delta); disp(tival);
         % If the data point is observed
         if tival == 1
-            interp(i) = D(g, i / (sfreq / delta),r);
+            interp(i) = D(g, (i-1) / (sfreq/delta)+1, r);
+            % interp(i) = D(g, i / (sfreq / delta),r);
             fvals(i) = 0;
         else
             f = 1 - (tival / (sfreq/delta));
@@ -121,9 +122,91 @@ L2 = plot(nan, nan, 'color', 'r');
 L3 = plot(nan, nan, 'color', 'g');
 L4 = plot(nan, nan, '_', 'color', 'k');
 L5 = plot(nan, nan, '|', 'color', 'k');
-legend([L1, L2, L3, L4, L5], {'PCNA', 'CDT1', 'GEM', 'Forward Interpolation', 'Backward Interpolation'})
+% legend([L1, L2, L3, L4, L5], {'PCNA', 'CDT1', 'GEM', 'Forward Interpolation', 'Backward Interpolation'})
 % title('Interpolating PIP-FUCCI Signals from RNAseq with FB DMD Models');
 xlabel('Hours');
+
+%% Demonstrate that forward-backward interpolation is advantageous by removing every other time point
+
+ds = 1;
+sensorGenes = ["PCNA","CDT1","GEM"];
+geneColor = ['k','r','g'];
+
+[D, G] = loadRNAseq(ds, sensorGenes);
+
+train = [1 3 5 7];
+test = [2 4 6];
+Dtrain = D(:,train);
+Dtest = D(:,test);
+
+reps = 1;
+T = size(Dtrain,2);
+n = size(Dtrain,1);
+
+sfreq = 16;
+delta = 1/3;
+tts = sfreq * [0:T-1];
+ttd = 0:delta:max(tts);
+ttt = [8 24 40];
+
+r=1;
+% Interpolate data forward
+DD = Dtrain;
+Ahat = EDMD(DD);      % Ahat at sfreq    
+AhatDelta = expm(logm(Ahat) * delta / sfreq);  % AhatDelta interpolates data at a higher frequency
+Di = [];
+for t=1:T-1
+    Dt = DD(:, t);
+    for i = 1:sfreq/delta-1
+        Dt = [Dt AhatDelta * Dt(:,end)];
+    end
+    Di = [Di Dt];
+end
+Df = [Di DD(:,end)];
+
+% Interpolate data backward
+DD = flip(Dtrain, 2);
+Ahat = EDMD(DD);      % Ahat at sfreq    
+AhatDelta = expm(logm(Ahat) * delta / sfreq);  % AhatDelta interpolates data at a higher frequency
+Di = [];
+for t=1:T-1
+    Dt = DD(:, t);
+    for i = 1:sfreq/delta-1
+        Dt = [Dt AhatDelta * Dt(:,end)];
+    end
+    Di = [Di Dt];
+end
+Db = [Di DD(:,end)];
+Db = flip(Db, 2);
+
+figure;
+tiledlayout(6,1);
+
+nexttile;
+for g=1:3
+    scatter(tts, Dtrain(g,:), geneColor(g), 'o', 'filled'); hold on;
+    scatter(ttd, Df(g,:),  geneColor(g), '_'); hold on;
+    scatter(ttt, Dtest(g,:), geneColor(g), 'x');
+end
+title('Forward Interpolation'); ylabel('Expression');
+
+nexttile;
+for g=1:3
+    scatter(tts, Dtrain(g,:), geneColor(g), 'o', 'filled'); hold on;
+    scatter(ttd, Db(g,:),  geneColor(g), '|'); hold on;
+    scatter(ttt, Dtest(g,:), geneColor(g), 'x');
+end
+title('Backward Interpolation'); ylabel('Expression');
+
+nexttile;
+for g=1:3
+    scatter(tts, Dtrain(g,:), geneColor(g), 'o', 'filled'); hold on;
+    scatter(ttd, Df(g,:),  geneColor(g), '_'); hold on;
+    scatter(ttd, Db(g,:),  geneColor(g), '|'); hold on;
+    scatter(ttt, Dtest(g,:), geneColor(g), 'x');
+end
+title('Forward-Backward Interpolation'); ylabel('Expression');
+
 
 
 %% Interpolate PIP-FUCCI data from microscopy

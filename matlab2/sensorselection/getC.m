@@ -1,5 +1,5 @@
 function [C] = getC(S, n)
-%GETC Constructs observation matrix
+%GETC Constructs observation matrix getC(S, n)
 %
 % Auth: Joshua Pickard
 %       jpic@umich.edu
