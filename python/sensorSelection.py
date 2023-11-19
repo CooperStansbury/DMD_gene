@@ -10,13 +10,16 @@ import importlib
 import hasnain_DMD
 # reload(hasnain_DMD)
 
-def hasnain2023(dmd_data, dmd_rank=7, gramT=10, vxNames=None):
+def hasnain2023(dmd_data, dmd_rank=7, gramT=10, vxNames=None, dmd_res=None):
     """Performs sensor selection according to the method from the Hasnain paper"""
     n = dmd_data.shape[0]
     if vxNames is None:
         vxNames = range(n)
     
-    dmd_res = hasnain_DMD.dmd(dmd_data, rank=dmd_rank)
+    # we can pass the precomputed result as an argument
+    if dmd_res is None:
+        dmd_res = hasnain_DMD.dmd(dmd_data, rank=dmd_rank)
+        
     A = dmd_res['Atilde']
     u = dmd_res['u_r']
     x0_embedded = dmd_res['data_embedded'][:,0,:]
@@ -34,6 +37,7 @@ def hasnain2023(dmd_data, dmd_rank=7, gramT=10, vxNames=None):
 
     obs['rank'] = obs['weight'].rank(ascending=False)
     obs = obs.sort_values(by='rank', ascending=True)
+    obs = obs.reset_index(drop=True)
     
     return {'sensors': obs,
             'dmd'    : dmd_res,
