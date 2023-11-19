@@ -1,4 +1,4 @@
-function driver(gt, ms, op, sc)
+function driver(Apath, gt, ms, op, sc)
 %DRIVER FOR SUBMODULAR OPTIMIZATION
 %
 % Auth: Joshua Pickard
@@ -10,12 +10,13 @@ disp(gt);
 disp(ms);
 disp(op);
 disp(sc);
+disp(Apath);
 
 % Add paths
 addpath(genpath('/home/jpic/DMD_gene/matlab2/'))
 
 % Load data
-load('cc_filtered_A.mat')
+load(Apath)
 
 % Call optimizer
 submodularSensorSelection(A,'gramT', gt, 'maxSensors', ms, 'outPath', op,'subCriteria', sc)
