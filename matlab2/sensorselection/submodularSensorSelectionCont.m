@@ -12,6 +12,8 @@ n = size(A, 1);
 outPath = "";
 subCriteria = 1;
 
+A = logm(A) / 8; % Continuous A from discrete A
+
 % Parse varargin
 for i = 1:2:length(varargin)
     if strcmpi(varargin{i}, 'maxSensors')
@@ -33,7 +35,7 @@ R = 1:n;                    % remaining sensors
 while numel(S) < maxSensors
     M = zeros(numel(R), 1);     % save scores for each sensor
     % try each of the remaining sensors
-    for i=1:numel(R)
+    parfor i=1:numel(R)
         disp(string(i) + "/" + string(numel(R)));
         vx = R(i);                  % pick an unused sensor
         C = getC([S vx], n);        % create C matrix
