@@ -161,18 +161,22 @@ def getFCFrame(df, cols):
     return df2[cols[1:]].copy()
 
 
-def data2DMD(df):
+def data2DMD(df, rescale=True):
     """A function to make DMD suitable data from the 2015 data"""
     a = [x for x in df.columns if "a" in x]
     b = [x for x in df.columns if "b" in x]
 
-    dfa = getFCFrame(df, a)
-    dfb = getFCFrame(df, b)
+    if rescale:
+        dfa = getFCFrame(df, a)
+        dfb = getFCFrame(df, b)
 
-    scaler = StandardScaler()
+        scaler = StandardScaler()
 
-    dfa = scaler.fit_transform(dfa)
-    dfb = scaler.fit_transform(dfb)
+        dfa = scaler.fit_transform(dfa)
+        dfb = scaler.fit_transform(dfb)
+    else:
+        dfa = df[a[1:]]
+        dfb = df[b[1:]]
     
     dmd_data = np.asarray([dfa, dfb])
     dmd_data = np.swapaxes(dmd_data, 0, 2)
@@ -181,18 +185,22 @@ def data2DMD(df):
     return dmd_data
 
 
-def data2DMD2017(df):
+def data2DMD2017(df, rescale=True):
     """A function to make DMD suitable data from the 2017 data"""
     a = [x for x in df.columns if "R1" in x]
     b = [x for x in df.columns if "R2" in x]
 
-    dfa = getFCFrame(df, a)
-    dfb = getFCFrame(df, b)
+    if rescale:
+        dfa = getFCFrame(df, a)
+        dfb = getFCFrame(df, b)
 
-    scaler = StandardScaler()
+        scaler = StandardScaler()
 
-    dfa = scaler.fit_transform(dfa)
-    dfb = scaler.fit_transform(dfb)
+        dfa = scaler.fit_transform(dfa)
+        dfb = scaler.fit_transform(dfb)
+    else:
+        dfa = df[a[1:]]
+        dfb = df[b[1:]]
 
     dmd_data = np.asarray([dfa, dfb])
     dmd_data = np.swapaxes(dmd_data, 0, 2)

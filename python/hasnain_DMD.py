@@ -229,7 +229,7 @@ def extact_dmd(data):
     Xp, Xf = dmd_reshape(data)
 
     A = Xf @ np.linalg.pinv(Xp)  # full model A
-    L, W = np.linalg.eig(Atilde)
+    L, W = np.linalg.eig(A)
     return {
         'A' : A,
         'L' : L,

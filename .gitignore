@@ -10,6 +10,9 @@ notebooks/submodularOpt/avg_filtered_A_thresh_7.mat
 notebooks/submodularOpt/std_filtered_A_thresh_1.mat
 notebooks/submodularOpt/geneNames_std_filtered_A_thresh_1.csv
 notebooks/gramStability/*
+notebooks/gramT_stability_KF_out.pkl
+*.pkl
+notebooks/submodularOpt/geneNames_avg_filtered_A_thresh_7.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
