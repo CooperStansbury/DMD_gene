@@ -157,7 +157,7 @@ def getFCFrame(df, cols):
     df2 = df[cols].copy()
     x0 = cols[0] # initial condition
     for c in cols[1:]:
-        df2[c] = (df2[c] + 1) /  (df2[x0].mean() + 1)
+        df2[c] = (df2[c] + 1) /  (df2[x0] + 1)
     return df2[cols[1:]].copy()
 
 

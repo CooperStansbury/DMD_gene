@@ -14,6 +14,11 @@ notebooks/gramT_stability_KF_out.pkl
 *.pkl
 notebooks/submodularOpt/geneNames_avg_filtered_A_thresh_7.csv
 
+# large data files
+data/raw_data/*
+data/2015_data/*
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
